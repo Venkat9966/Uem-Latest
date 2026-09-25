@@ -1,0 +1,2528 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "full_name": "Candidate User",
+      "email": "candidate@uemlabs.com",
+      "password_hash": "$2a$10$raCjNbzRMfyDoMVEB.Ou6Os8JLHNZrC4LWPzFwBG88ul4DaD32d3u",
+      "role": "candidate",
+      "must_reset_password": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "full_name": "Tutor User",
+      "email": "tutor@uemlabs.com",
+      "password_hash": "$2a$10$miNt41sDGO5hZoBwJFYY4.6Bi6sHrMYFQvPvdWuY3W0AcmKmaJwY6",
+      "role": "tutor",
+      "must_reset_password": 0,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "tutorUploads": [
+    {
+      "id": 11,
+      "user_id": 2,
+      "original_name": "Managed_Google_Play_Lab_Guide.pdf",
+      "stored_name": "96ba9ecb49e5c21ae8a2fa1d.pdf",
+      "mime": "application/pdf",
+      "size": 304,
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-3",
+      "lesson_name": "Module 3: Managed Google Play & App Distribution",
+      "created_at": "2026-09-25T05:10:00.257Z"
+    },
+    {
+      "id": 10,
+      "user_id": 2,
+      "original_name": "Android Enterprise Study Guide (1).pdf",
+      "stored_name": "60b4a91a9190fbeb01647e8d.pdf",
+      "mime": "application/pdf",
+      "size": 138455,
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture & Device Enrollment",
+      "created_at": "2026-09-25T05:04:25.735Z"
+    },
+    {
+      "id": 9,
+      "user_id": 2,
+      "original_name": "Test_Document.pdf",
+      "stored_name": "33f804230fbd406683ee4ef9.pdf",
+      "mime": "application/pdf",
+      "size": 304,
+      "course_id": "soti-mobicontrol",
+      "course_name": "SOTI MobiControl Mastery",
+      "lesson_id": "module-2",
+      "lesson_name": "Module 2: Rule Configuration",
+      "created_at": "2026-09-25T05:03:35.693Z"
+    },
+    {
+      "id": 8,
+      "user_id": 2,
+      "original_name": "sample_handbook.pdf",
+      "stored_name": "dfd4fad6c5071f0ca3e1b45e.pdf",
+      "mime": "application/pdf",
+      "size": 304,
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture",
+      "created_at": "2026-09-25T05:01:06.011Z"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "original_name": "SOTI_Package_Studio_Guide.pdf",
+      "stored_name": "9b368926289d9dbc853762fc.pdf",
+      "mime": "application/pdf",
+      "size": 51,
+      "course_id": "soti-mobicontrol",
+      "course_name": "SOTI MobiControl Mastery",
+      "lesson_id": "module-3",
+      "lesson_name": "Module 3: Package Studio & Scripting Engine",
+      "created_at": "2026-09-25T04:58:34.050Z"
+    },
+    {
+      "id": 6,
+      "user_id": 2,
+      "original_name": "Android Enterprise Study Guide (1).pdf",
+      "stored_name": "3239ba2bac2fb10ed9954294.pdf",
+      "mime": "application/pdf",
+      "size": 138455,
+      "created_at": "2026-09-25T04:55:02.342Z",
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture & Device Enrollment"
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "original_name": "handbook.pdf",
+      "stored_name": "e15eb59e82d942a3eac42d03.pdf",
+      "mime": "application/pdf",
+      "size": 32,
+      "created_at": "2026-09-25T04:23:01.012Z",
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-2",
+      "lesson_name": "Module 2: Work Profile vs Fully Managed (COBO/COPE)"
+    },
+    {
+      "id": 4,
+      "user_id": 2,
+      "original_name": "sample.pdf",
+      "stored_name": "8c9b6feb8517e83fbfb59dfe.pdf",
+      "mime": "application/pdf",
+      "size": 9,
+      "created_at": "2026-09-25T04:22:28.321Z",
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture & Device Enrollment"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "original_name": "test-lesson.pdf",
+      "stored_name": "12fc1f86e00c071c5a97116a.pdf",
+      "mime": "application/pdf",
+      "size": 47,
+      "created_at": "2026-09-25T04:22:23.129Z",
+      "course_id": "soti-mobicontrol",
+      "course_name": "SOTI MobiControl Mastery",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture, Deployment Servers & Agents"
+    },
+    {
+      "id": 1,
+      "user_id": 2,
+      "original_name": "Android_Enterprise_Curriculum_v2.pdf",
+      "stored_name": "sample-android-curriculum.pdf",
+      "mime": "application/pdf",
+      "size": 245760,
+      "created_at": "2026-09-25T01:00:00.000Z",
+      "course_id": "android-enterprise",
+      "course_name": "Android Enterprise Foundations",
+      "lesson_id": "module-1",
+      "lesson_name": "Module 1: Architecture & Device Enrollment"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "original_name": "Workspace_ONE_Quiz_Module1.json",
+      "stored_name": "sample-quiz.json",
+      "mime": "application/json",
+      "size": 4096,
+      "created_at": "2026-09-25T01:00:00.000Z",
+      "course_id": "workspace-one",
+      "course_name": "Workspace ONE Essentials",
+      "lesson_id": "module-2",
+      "lesson_name": "Module 2: Device Profiling & Smart Groups"
+    }
+  ],
+  "passwordResets": [
+    {
+      "user_id": 1,
+      "token": "86c37674015a584132827ffaef2d356a187ef47a4e27172f",
+      "expires_at": "2026-09-25T05:31:24.127Z",
+      "created_at": "2026-09-25T04:31:24.127Z"
+    }
+  ],
+  "courseProgress": {
+    "1": {
+      "android-enterprise": {
+        "completed": 0,
+        "total": 6,
+        "name": "Android Enterprise Foundations"
+      },
+      "workspace-one": {
+        "completed": 3,
+        "total": 8,
+        "name": "Workspace ONE Essentials"
+      },
+      "soti-mobicontrol": {
+        "completed": 2,
+        "total": 7,
+        "name": "SOTI MobiControl Mastery"
+      },
+      "ivanti-neurons": {
+        "completed": 1,
+        "total": 5,
+        "name": "Ivanti Neurons for UEM"
+      },
+      "rugged-devices": {
+        "completed": 2,
+        "total": 8,
+        "name": "Rugged & Frontline Devices"
+      },
+      "intune-essentials": {
+        "completed": 0,
+        "total": 6,
+        "name": "Intune & Endpoint Security"
+      }
+    }
+  },
+  "quizProgress": {
+    "1": {
+      "android-enterprise": {},
+      "workspace-one": {
+        "module-1": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        },
+        "module-2": {
+          "score": 2,
+          "total": 3,
+          "percentage": 67,
+          "passed": false
+        },
+        "module-3": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        }
+      },
+      "soti-mobicontrol": {
+        "module-1": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        },
+        "module-2": {
+          "score": 2,
+          "total": 3,
+          "percentage": 67,
+          "passed": false
+        }
+      },
+      "ivanti-neurons": {
+        "module-1": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        }
+      },
+      "rugged-devices": {
+        "module-1": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        },
+        "module-2": {
+          "score": 3,
+          "total": 3,
+          "percentage": 100,
+          "passed": true
+        }
+      },
+      "intune-essentials": {}
+    }
+  },
+  "courseCatalog": {
+    "android-enterprise": {
+      "name": "Android Enterprise Foundations",
+      "category": "Mobile Endpoint Architecture",
+      "instructor": "Lead Android Enterprise Specialist",
+      "description": "Master core deployment architectures, corporate-owned dedicated setups, OEMConfig policies, and Google Play integration for enterprise Android fleets.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Architecture & Device Enrollment",
+          "duration": "45 mins",
+          "summary": "Understand Google Mobile Services (GMS), device management API architecture, DPC roles, and Zero-Touch staging.",
+          "details": {
+            "overview": "Android Enterprise utilizes a modern device management architecture built around Google Mobile Services (GMS) and the Device Policy Controller (DPC). Unlike legacy Device Administrator APIs (deprecated in Android 10), Android Enterprise uses containerization, cryptographic work boundaries, and system-level management intents to enforce enterprise policy without compromising user privacy.",
+            "topics": [
+              "Evolution from legacy Device Admin to Android Enterprise Architecture",
+              "Role of Google Play EMM API & Android Management API (AMAPI)",
+              "Device Policy Controller (DPC) lifecycle and on-device token handshakes",
+              "Zero-Touch Enrollment (ZTE) portal bindings and cloud staging tokens"
+            ],
+            "lab_guide": [
+              "Step 1: In the EMM console, generate an enrollment QR code containing the DPC extras bundle (com.google.android.apps.work.clouddpc).",
+              "Step 2: Take a factory-reset Android 11+ endpoint and tap the initial setup \"Welcome\" screen 6 times to activate the system QR scanner.",
+              "Step 3: Connect to the enterprise staging Wi-Fi and allow Google Play Services to download and provision the enterprise DPC.",
+              "Step 4: Verify in adb terminal that the device owner is active using: adb shell dumpsys device_policy."
+            ],
+            "commands_configs": "// DPC Enrollment Extras JSON Payload\n{\n  \"android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME\": \"com.afwsamples.testdpc/com.afwsamples.testdpc.DeviceAdminReceiver\",\n  \"android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM\": \"6qXZSystemCheckSum992==\",\n  \"android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE\": {\n    \"serverUrl\": \"https://enroll.uemlabs.com/android\",\n    \"enrollmentToken\": \"TOK_AE_CORP_0921\"\n  }\n}",
+            "key_takeaways": [
+              "Legacy Device Administrator is deprecated; all modern deployments require Android Enterprise.",
+              "Device Owner (DO) mode can only be initialized on a pristine factory-reset device prior to any accounts being added.",
+              "Zero-Touch Enrollment binds IMEI/Serial hardware hashes directly to your enterprise tenant via participating cellular carriers."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "When can an Android device be provisioned into Device Owner (Fully Managed) mode?",
+              "options": [
+                "Anytime through the device Settings menu",
+                "Only during Initial Setup wizard on a factory-reset device before any user accounts exist",
+                "Only after rooting the device operating system",
+                "By sending a broadcast SMS to the device phone number"
+              ],
+              "answer": 1,
+              "explanation": "Device Owner mode enforces system-level management and can strictly only be set up during initial out-of-box setup before any personal or corporate accounts are bound."
+            },
+            {
+              "id": "q2",
+              "question": "How do you activate the system camera for QR code enrollment on a newly unboxed Android device?",
+              "options": [
+                "Press volume up three times",
+                "Tap the \"Welcome\" setup screen 6 times in the same spot",
+                "Hold the power button for 15 seconds",
+                "Swipe down twice from the notification shade"
+              ],
+              "answer": 1,
+              "explanation": "Tapping anywhere on the first setup wizard screen 6 times prompts the OS to launch its embedded QR code camera scanner."
+            },
+            {
+              "id": "q3",
+              "question": "Which component enforces corporate policies locally on an Android Enterprise device?",
+              "options": [
+                "Device Policy Controller (DPC)",
+                "Google Play Music",
+                "Android Recovery Console",
+                "Bluetooth PAN Gateway"
+              ],
+              "answer": 0,
+              "explanation": "The Device Policy Controller (DPC) is the on-device client application that communicates with your EMM server and requests the OS kernel to apply security configurations."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Work Profile vs Fully Managed (COBO/COPE)",
+          "duration": "50 mins",
+          "summary": "Deep-dive into BYOD containerization, enterprise isolation, encryption keys, and fully managed corporate restrictions.",
+          "details": {
+            "overview": "Android Enterprise supports distinct deployment modes tailored to device ownership. Personally-Owned (BYOD) uses a cryptographic Work Profile, establishing separate encryption keys for work and personal data. Corporate-Owned Personally-Enabled (COPE / WP-COD) provides organization-level control while preserving user privacy in a distinct container. Corporate-Owned Business-Only (COBO) and Dedicated (COSU) give IT total control over the entire device.",
+            "topics": [
+              "Cryptographic user boundary isolation and separate eCryptfs/FBE storage rings",
+              "Cross-profile data sharing controls, copy/paste restrictions, and intent filters",
+              "COPE policy evolution in Android 11+ (WP-COD model)",
+              "Dedicated (COSU) kiosk appliances for POS, logistics, and digital signage"
+            ],
+            "lab_guide": [
+              "Step 1: Configure a Work Profile policy that restricts cross-profile copy/paste clipboard operations.",
+              "Step 2: Enroll a personal device using the Google Play work account portal link.",
+              "Step 3: Open the corporate Contacts app and verify work contacts cannot be synced or pasted into personal WhatsApp.",
+              "Step 4: Inspect running Android user spaces: adb shell pm list users."
+            ],
+            "commands_configs": "// Verification of dual user space in ADB\n$ adb shell pm list users\nUsers:\n  UserInfo{0:Owner:13} running\n  UserInfo{10:Work profile:30} running\n\n// Inspecting cross-profile intent filters\n$ adb shell dumpsys device_policy | grep \"CrossProfileIntentFilter\"",
+            "key_takeaways": [
+              "Work Profile uses user ID 10+ with separate hardware-backed encryption keys.",
+              "In COPE (Android 11+), IT cannot view personal apps, location, or private browsing history.",
+              "Cross-profile intent filters dictate whether corporate URLs can trigger personal browser handlers."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What happens to work data when a candidate resigns and an Enterprise Wipe is performed on a BYOD device?",
+              "options": [
+                "The entire phone is wiped back to factory settings",
+                "Only the Work Profile container and its associated encryption keys are destroyed; personal data remains intact",
+                "The user SIM card is deactivated automatically",
+                "The device operating system is downgraded"
+              ],
+              "answer": 1,
+              "explanation": "Enterprise Wipe selectively deletes the Work Profile container and revokes its encryption keys without touching personal photos, contacts, or private apps."
+            },
+            {
+              "id": "q2",
+              "question": "Which deployment model is best suited for an unattended warehouse barcode scanner?",
+              "options": [
+                "BYOD Work Profile",
+                "Dedicated Device (COSU / Kiosk)",
+                "Unmanaged Guest Mode",
+                "COPE Personal Container"
+              ],
+              "answer": 1,
+              "explanation": "Dedicated devices (formerly COSU) are designed for single-use or kiosk scenarios where end-users should only access specific operational applications."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: Managed Google Play & App Distribution",
+          "duration": "40 mins",
+          "summary": "Set up enterprise app binding, iframe app approvals, private APK hosting, and runtime permissions configuration.",
+          "details": {
+            "overview": "Managed Google Play is the content marketplace and app deployment engine for Android Enterprise. IT administrators can approve public apps, upload custom enterprise line-of-business (LOB) APKs, distribute web apps, and silently push managed configurations (App Config) directly to enrolled devices without end-user interaction.",
+            "topics": [
+              "Managed Google Play Enterprise account binding and Service Account credentials",
+              "Silent installation and auto-update policies over Wi-Fi only vs any network",
+              "Managed Configurations (AppConfig schema) for injecting server endpoints and credentials",
+              "Private app publishing and zero-day app rollouts"
+            ],
+            "lab_guide": [
+              "Step 1: Access the Managed Google Play iframe within the EMM console and search for \"Google Chrome\".",
+              "Step 2: Approve the app and select \"Silent Auto-Install\" for the Sales department device group.",
+              "Step 3: Open the Managed Configuration designer and set the Homepage URL to \"https://portal.uemlabs.com\".",
+              "Step 4: Grant all runtime permissions silently (CAMERA: Grant, LOCATION: Grant)."
+            ],
+            "commands_configs": "// Sample AppConfig XML schema representation for Google Chrome\n<bundle>\n  <string name=\"HomepageLocation\">https://intranet.uemlabs.com</string>\n  <boolean name=\"IncognitoModeAvailability\">1</boolean>\n  <list name=\"URLBlocklist\">\n    <item>*</item>\n  </list>\n  <list name=\"URLAllowlist\">\n    <item>*.uemlabs.com</item>\n    <item>https://login.microsoftonline.com/*</item>\n  </list>\n</bundle>",
+            "key_takeaways": [
+              "Apps distributed via Managed Google Play update automatically through the Google Play client daemon.",
+              "Managed Configurations eliminate the need for end-users to type server URLs, usernames, or gateway settings.",
+              "Runtime permissions can be set to Automatically Grant, Automatically Deny, or Prompt User."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the purpose of AppConfig (Managed Configurations) in Android Enterprise?",
+              "options": [
+                "To increase screen brightness when opening an app",
+                "To dynamically push corporate settings (URLs, tokens, flags) into an app without user entry",
+                "To decompile APK packages into Java source code",
+                "To disable hardware sensors"
+              ],
+              "answer": 1,
+              "explanation": "AppConfig exposes standardized XML/JSON schemas allowing administrators to pre-populate corporate endpoints, certificates, and operational flags directly into apps."
+            },
+            {
+              "id": "q2",
+              "question": "Can internal line-of-business (LOB) APKs be distributed privately without appearing in the public Play Store?",
+              "options": [
+                "No, all apps on Google Play must be publicly accessible worldwide",
+                "Yes, via the Private Apps tab in Managed Google Play, visible only to your enterprise ID",
+                "Only by manually connecting a USB cable to each phone",
+                "Only if published under a personal Gmail account"
+              ],
+              "answer": 1,
+              "explanation": "Private Apps published through the Managed Google Play console are strictly scoped to the enterprise organization and are completely hidden from the public store."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: Zero-Touch Enrollment & OEMConfig",
+          "duration": "55 mins",
+          "summary": "Automate unboxing workflows, configure cloud carrier portals, and push OEM-specific hardware settings (Zebra, Samsung Knox).",
+          "details": {
+            "overview": "Zero-Touch Enrollment (ZTE) allows seamless out-of-the-box staging for corporate fleets. When an employee unboxes a new device and powers it on, the device checks the Google Zero-Touch cloud database, identifies its corporate owner, downloads the assigned EMM DPC, and applies security policies automatically. OEMConfig extends this by exposing proprietary hardware controls (barcode scanner engines, physical buttons, battery management) through standardized Play Store apps.",
+            "topics": [
+              "Zero-Touch portal management and customer-reseller pairing",
+              "Configuring Zero-Touch DPC extras configuration profiles",
+              "OEMConfig architecture (Zebra OEMConfig, Samsung Knox Service Plugin, Honeywell)",
+              "Controlling hardware features: physical scanner triggers, Wi-Fi roaming thresholds"
+            ],
+            "lab_guide": [
+              "Step 1: Sign in to the Zero-Touch portal and link your authorized hardware reseller account.",
+              "Step 2: Create a Default Configuration mapping device IMEI numbers to your EMM server enrollment DPC.",
+              "Step 3: Approve Zebra OEMConfig in Managed Google Play and attach it to your rugged device smart group.",
+              "Step 4: Configure the physical scan button mapping to launch your enterprise inventory scanner app."
+            ],
+            "commands_configs": "// Zero-Touch Cloud Portal DPC Configuration Snippet\n{\n  \"dpc\": \"com.soti.mobicontrol.androidwork\",\n  \"dpcExtras\": {\n    \"enrollmentId\": \"UEM-CORP-ZERO-9901\",\n    \"promptForCredentials\": false,\n    \"disallowFactoryReset\": true\n  },\n  \"supportEmail\": \"support@uemlabs.com\",\n  \"supportPhone\": \"+1-800-555-0199\",\n  \"companyName\": \"UEM Labs Global Fleet\"\n}",
+            "key_takeaways": [
+              "Zero-Touch persists even after a hardware factory reset, preventing theft and unmanaged usage.",
+              "OEMConfig standardizes vendor-specific hardware management without waiting for EMM platform updates.",
+              "Zebra OEMConfig requires MX (Mobility Extensions) firmware version compatibility."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What occurs when an unauthorized user factory-resets a Zero-Touch enrolled device?",
+              "options": [
+                "The device becomes an unmanaged personal phone",
+                "Upon connecting to Wi-Fi/cellular, the device re-enrolls into the corporate EMM automatically",
+                "The device enters an unrecoverable hard-brick state",
+                "The SIM card is locked with a random PUK code"
+              ],
+              "answer": 1,
+              "explanation": "Zero-Touch binds the hardware IMEI to Google servers; during initial network activation, the device detects its corporate assignment and forces corporate enrollment."
+            },
+            {
+              "id": "q2",
+              "question": "Which enterprise hardware management standard allows OEM vendors to expose device-specific settings through Google Play?",
+              "options": [
+                "OEMConfig (built on Android Enterprise Managed Configurations)",
+                "Legacy USB OTG firmware flashing",
+                "Rooting the device kernel",
+                "Android Debug Bridge over public Wi-Fi"
+              ],
+              "answer": 0,
+              "explanation": "OEMConfig allows hardware OEMs (Zebra, Samsung, Honeywell) to publish schema-driven apps to Managed Google Play that expose hardware buttons, scanner tuning, and battery management directly to EMM consoles."
+            },
+            {
+              "id": "q3",
+              "question": "What is required to pair an enterprise customer tenant with Google Zero-Touch Enrollment?",
+              "options": [
+                "Purchasing compatible Android 9+ hardware from an authorized Zero-Touch reseller who uploads device IMEIs/serials into the customer portal",
+                "Sublicensing Android OS source code from Google",
+                "Installing custom ROMs on each device",
+                "Running a local DHCP server on port 67"
+              ],
+              "answer": 0,
+              "explanation": "Zero-Touch enrollment requires hardware purchased through authorized enterprise resellers who link device hardware hashes directly to the customer organization ID."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Compliance Policies & Security Rules",
+          "duration": "35 mins",
+          "summary": "Define password entropy, CTS profile integrity, factory reset protection, and SafetyNet / Play Integrity triggers.",
+          "details": {
+            "overview": "Security enforcement in Android Enterprise leverages hardware-backed attestation (Play Integrity API, formerly SafetyNet) and kernel-level SELinux policies. Administrators can enforce screen lock complexity, mandate storage encryption, prevent USB debugging, and trigger automated quarantine actions when compliance thresholds are breached.",
+            "topics": [
+              "Play Integrity API checks: BASIC_INTEGRITY vs DEVICE_INTEGRITY vs STRONG_INTEGRITY",
+              "Password complexity levels: Numeric, Alphabetic, Alphanumeric, Complex Biometric",
+              "Factory Reset Protection (FRP) whitelists to prevent activation lock",
+              "Automated compliance engines: Warn, Block Access, and Selective Wipe"
+            ],
+            "lab_guide": [
+              "Step 1: Set up a Compliance Rule requiring Minimum OS Version 13.0 and Play Integrity Device Attestation.",
+              "Step 2: Add an action: If non-compliant for 24 hours, revoke Exchange email access and notify the security team.",
+              "Step 3: Configure corporate Google account IDs for Enterprise Factory Reset Protection override.",
+              "Step 4: Verify compliance state in the EMM device overview tab."
+            ],
+            "commands_configs": "// Google Play Integrity Verification Response Concept\n{\n  \"requestDetails\": { \"requestPackageName\": \"com.uemlabs.agent\" },\n  \"appLicensingVerdict\": \"LICENSED\",\n  \"deviceIntegrity\": {\n    \"deviceRecognitionVerdict\": [\n      \"MEETS_DEVICE_INTEGRITY\",\n      \"MEETS_BASIC_INTEGRITY\"\n    ]\n  }\n}",
+            "key_takeaways": [
+              "MEETS_DEVICE_INTEGRITY verifies the device runs a certified CTS-tested Android build with locked bootloader.",
+              "Enterprise FRP allows IT to unlock a device even if an ex-employee left their personal Google account on it.",
+              "Compliance rules should have tiered grace periods to avoid unnecessary operational disruption."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What does MEETS_DEVICE_INTEGRITY in the Play Integrity API verify?",
+              "options": [
+                "That the battery is charged above 80%",
+                "That the device is a genuine Android device with an unlocked custom ROM",
+                "That the device runs a certified Android build and has a locked, untampered bootloader",
+                "That the user has accepted terms of service"
+              ],
+              "answer": 2,
+              "explanation": "MEETS_DEVICE_INTEGRITY is a cryptographic hardware attestation proving the device is running a Google-certified Android OS with a secure boot chain and locked bootloader."
+            },
+            {
+              "id": "q2",
+              "question": "What is the purpose of Enterprise Factory Reset Protection (FRP) in Android Enterprise?",
+              "options": [
+                "To ensure IT administrators can unlock and re-provision devices even if an employee left their personal Google account on the device before departing",
+                "To format the device memory automatically every 30 days",
+                "To prevent devices from connecting to cellular towers",
+                "To disable all screen lock passcodes"
+              ],
+              "answer": 0,
+              "explanation": "Enterprise FRP whitelists specific corporate Google account IDs that are authorized to bypass activation lock following a recovery mode factory reset."
+            },
+            {
+              "id": "q3",
+              "question": "Which compliance tier in the Play Integrity API verifies that the endpoint is running a Google-certified Android build with a secure, locked bootloader?",
+              "options": [
+                "MEETS_DEVICE_INTEGRITY",
+                "MEETS_BASIC_INTEGRITY only",
+                "NO_INTEGRITY",
+                "MEETS_VIRTUAL_INTEGRITY"
+              ],
+              "answer": 0,
+              "explanation": "MEETS_DEVICE_INTEGRITY confirms hardware-backed cryptographic attestation that the device is running a certified OS build without unauthorized bootloader tampering or root exploits."
+            }
+          ]
+        },
+        {
+          "id": "module-6",
+          "name": "Module 6: Troubleshooting & Diagnostic Logs",
+          "duration": "45 mins",
+          "summary": "Capture ADB logcat, parse bug reports, trace DPC token issues, and diagnose corporate Wi-Fi authentication drops.",
+          "details": {
+            "overview": "Enterprise mobile engineers must know how to quickly pinpoint enrollment failures, certificate mismatches, and network drops. Android provides deep diagnostic tools through Android Debug Bridge (ADB), bugreports, dumpsys commands, and DPC diagnostic logs.",
+            "topics": [
+              "Capturing and parsing Android bug reports (bugreport.zip) with Google Battery Historian / Chkbugreport",
+              "Tracing DevicePolicyManager state with adb shell dumpsys device_policy",
+              "Investigating Wi-Fi 802.1X EAP-TLS certificate failures with logcat | grep wpa_supplicant",
+              "Common enrollment error codes: 400 Bad Token, 403 Forbidden, 404 No DPC Bundle"
+            ],
+            "lab_guide": [
+              "Step 1: Connect endpoint via USB and authorize ADB debugging.",
+              "Step 2: Execute command to dump current device policy configurations to a text file.",
+              "Step 3: Filter logcat output for enterprise provisioning errors during a mock enrollment.",
+              "Step 4: Generate a full system bugreport using: adb bugreport enterprise_debug.zip."
+            ],
+            "commands_configs": "// Diagnostic ADB Commands for Android Enterprise\n$ adb shell dumpsys device_policy > policy_dump.txt\n$ adb logcat -v time -s DPM:V DevicePolicyManager:V clouddpc:V\n$ adb shell dumpsys wifi | grep -E \"SSID|mNetworkCapabilities|SupplicantState\"\n$ adb bugreport my_device_bugreport.zip",
+            "key_takeaways": [
+              "Dumpsys device_policy contains the definitive truth of active restrictions, device owners, and delegated scopes.",
+              "Bugreports contain kernel dmesg, system logcat, memory dumps, and battery telemetry.",
+              "Certificate installation failures are commonly caused by missing intermediate CAs in the PKCS#12 payload."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Which ADB command provides the active restrictions and policies applied by the Device Policy Controller?",
+              "options": [
+                "adb shell dumpsys device_policy",
+                "adb shell killall android",
+                "adb shell rm -rf /system",
+                "adb shell getprop ro.serialno"
+              ],
+              "answer": 0,
+              "explanation": "`adb shell dumpsys device_policy` outputs the active Device Owner, Profile Owner, delegated management scopes, password quality requirements, and applied policy restrictions."
+            },
+            {
+              "id": "q2",
+              "question": "When diagnosing a Wi-Fi 802.1X EAP-TLS certificate failure in Android logcat, which tag should you filter for?",
+              "options": [
+                "wpa_supplicant",
+                "AudioFlinger",
+                "CameraService",
+                "WallpaperManager"
+              ],
+              "answer": 0,
+              "explanation": "`wpa_supplicant` is the core Linux/Android daemon responsible for WPA/WPA2/WPA3 enterprise Wi-Fi handshakes and certificate authentication validation."
+            },
+            {
+              "id": "q3",
+              "question": "Which tool can be used to visualize and analyze Android bugreport battery telemetry and app wake-locks?",
+              "options": [
+                "Google Battery Historian",
+                "Microsoft Excel 97",
+                "Photoshop",
+                "Notepad"
+              ],
+              "answer": 0,
+              "explanation": "Google Battery Historian parses Android bugreport.zip files into timeline charts showing screen on/off events, Wi-Fi wake-locks, and battery discharge rates."
+            }
+          ]
+        }
+      ]
+    },
+    "workspace-one": {
+      "name": "Workspace ONE Essentials",
+      "category": "Modern UEM & Access Management",
+      "instructor": "VMware certified UEM Master",
+      "description": "Design and configure VMware Workspace ONE UEM console structures, smart groups, tunnel integrations, and enterprise app catalogs.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Architecture & Console Setup",
+          "duration": "40 mins",
+          "summary": "Organizational group hierarchy, role-based access control, directory service sync, and cloud connector setup.",
+          "details": {
+            "overview": "Workspace ONE UEM (formerly AirWatch) uses an Organization Group (OG) hierarchy modeled after an enterprise corporate tree. Settings and profiles inherit from parent OGs down to child OGs, allowing regional delegation and granular policy scoping.",
+            "topics": [
+              "Multi-tenant Organization Group (OG) design: Global, Customer, Regional, Division",
+              "Inherit vs Override settings mechanics",
+              "AirWatch Cloud Connector (ACC) for Active Directory / LDAP and Certificate Authority sync",
+              "Role-Based Access Control (RBAC) and custom administrator permission sets"
+            ],
+            "lab_guide": [
+              "Step 1: Log in to Workspace ONE UEM console and navigate to Groups & Settings > Organization Groups.",
+              "Step 2: Create a child OG named \"Europe - Mobile Logistics\" underneath the Customer OG.",
+              "Step 3: Change settings from \"Inherit\" to \"Override\" to enable customized regional branding.",
+              "Step 4: Verify directory integration test connectivity through the Cloud Connector."
+            ],
+            "commands_configs": "// Workspace ONE REST API Sample - Fetch Organization Group Details\nGET /API/system/groups/1092\nHost: as901.awmdm.com\naw-tenant-code: API_KEY_CORP_9918\nAuthorization: Basic YWRtaW5AdWVtbGFiczpjb25zb2xlMTIzIQ==\nAccept: application/json",
+            "key_takeaways": [
+              "Always assign devices and policies at the Customer OG level or below; never at Global.",
+              "AirWatch Cloud Connector initiates outbound HTTPS connections on port 443, eliminating the need for inbound firewall holes.",
+              "Settings inheritance saves administrative overhead when managing global baselines."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "At which Organization Group level should enterprise devices and user profiles typically be configured?",
+              "options": [
+                "Global OG",
+                "Customer OG or its regional Child OGs",
+                "Temporary OG",
+                "Root Master OG"
+              ],
+              "answer": 1,
+              "explanation": "Devices and profiles must reside at the Customer OG level or beneath. The Global OG is strictly reserved for system architecture and hosting multi-tenant configurations."
+            },
+            {
+              "id": "q2",
+              "question": "Which network port does AirWatch Cloud Connector (ACC) require for outbound communication to the Workspace ONE UEM cloud console?",
+              "options": [
+                "TCP Port 22 (SSH)",
+                "TCP Port 443 (HTTPS outbound only)",
+                "TCP Port 3389 (RDP)",
+                "TCP Port 80 (HTTP unencrypted)"
+              ],
+              "answer": 1,
+              "explanation": "AirWatch Cloud Connector initiates only outbound HTTPS connections over TCP port 443 to Workspace ONE cloud, eliminating the need for incoming firewall holes."
+            },
+            {
+              "id": "q3",
+              "question": "What is the architectural effect of changing an Organization Group setting from \"Inherit\" to \"Override\"?",
+              "options": [
+                "It deletes all enrolled devices in the child group",
+                "It breaks inheritance for that category, allowing the child OG to configure custom policies and branding independently",
+                "It blocks users from logging into the Self-Service Portal",
+                "It resets administrator passwords across the entire tenant"
+              ],
+              "answer": 1,
+              "explanation": "Selecting Override breaks inheritance for that specific settings category, allowing administrators of the child OG to apply tailored configurations."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Device Profiling & Smart Groups",
+          "duration": "45 mins",
+          "summary": "Dynamic smart group assignment, multi-platform profile delivery, passcode policies, and compliance actions.",
+          "details": {
+            "overview": "Smart Groups are dynamic criteria-based targeting engines in Workspace ONE. Unlike static groups, Smart Groups evaluate endpoint attributes in real time, such as OS version, device model, ownership type, user department, or management status, ensuring profiles land only on appropriate endpoints.",
+            "topics": [
+              "Constructing dynamic Smart Groups using boolean logic and device attributes",
+              "Profile payloads: Passcode, Wi-Fi 802.1x, VPN, Restrictions, Credentials",
+              "Exclusions and priority handling when profiles conflict",
+              "Automated compliance triggers: Jailbroken/Rooted detection, encryption enforcement"
+            ],
+            "lab_guide": [
+              "Step 1: Create a Smart Group named \"Corporate Executives - iOS 17+\".",
+              "Step 2: Add criteria: Ownership = Corporate Dedicated, Platform = Apple iOS, Minimum OS = 17.0.",
+              "Step 3: Create an iOS Profile containing an enterprise Wi-Fi certificate and Exchange ActiveSync payload.",
+              "Step 4: Assign the profile to the Smart Group and verify push status in the device event log."
+            ],
+            "commands_configs": "// Smart Group Evaluation Payload Criteria\n{\n  \"Name\": \"Zebra Scanners - Warehouse 04\",\n  \"Criteria\": {\n    \"Platform\": \"Android\",\n    \"Model\": [\"TC52\", \"TC57\", \"TC21\"],\n    \"Ownership\": \"Corporate\",\n    \"UserGroup\": \"Logistics-Floor\"\n  }\n}",
+            "key_takeaways": [
+              "Smart Groups update membership automatically as devices enroll, upgrade OS, or change user assignments.",
+              "Exclusions take precedence over inclusions in Smart Group assignment.",
+              "Compliance policies can automatically strip profiles if an endpoint violates corporate rules."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "How do Smart Groups in Workspace ONE differ from traditional static user groups?",
+              "options": [
+                "Smart Groups require manual addition of every serial number",
+                "Smart Groups dynamically calculate membership based on live device attributes like OS version, model, and ownership",
+                "Smart Groups can only be used on Windows laptops",
+                "Smart Groups cost extra licensing per device"
+              ],
+              "answer": 1,
+              "explanation": "Smart Groups evaluate dynamic criteria (model, platform, ownership, OS build) and automatically add or remove endpoints as their status changes."
+            },
+            {
+              "id": "q2",
+              "question": "When both inclusions and exclusions are configured in a Workspace ONE Smart Group assignment, which rule takes precedence?",
+              "options": [
+                "Inclusions always override exclusions",
+                "Exclusions take precedence over inclusions",
+                "Whichever rule was configured most recently",
+                "The device operating system determines priority"
+              ],
+              "answer": 1,
+              "explanation": "In Workspace ONE UEM, exclusions always take precedence over inclusions to guarantee that restricted or testing populations are not inadvertently impacted."
+            },
+            {
+              "id": "q3",
+              "question": "Which push notification service is utilized by Workspace ONE to deliver profiles and MDM commands to iOS/iPadOS endpoints?",
+              "options": [
+                "Apple Push Notification service (APNs)",
+                "Simple Mail Transfer Protocol (SMTP)",
+                "Telnet over port 23",
+                "NetBIOS broadcast"
+              ],
+              "answer": 0,
+              "explanation": "Apple mobile device management relies on APNs to wake up the device, prompting it to check in with the Workspace ONE MDM server over an encrypted TLS connection."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: Enterprise App Catalog & Tunnel",
+          "duration": "50 mins",
+          "summary": "Internal enterprise app packaging, per-app VPN with Workspace ONE Tunnel, and proxy gateways.",
+          "details": {
+            "overview": "Workspace ONE Tunnel provides micro-VPN per-app segmentation, routing confidential corporate intranet traffic securely back to internal data centers without tunneling personal browser or streaming traffic.",
+            "topics": [
+              "Deploying the Unified Access Gateway (UAG) appliance for Tunnel routing",
+              "Per-App VPN configuration vs Device-Wide VPN",
+              "Device Traffic Rules (DTR) and split tunneling domains",
+              "App wrapping and Workspace ONE SDK integration for secure offline caching"
+            ],
+            "lab_guide": [
+              "Step 1: Deploy a Unified Access Gateway (UAG) virtual appliance with the Tunnel edge service enabled.",
+              "Step 2: In the UEM console, define Device Traffic Rules: Direct all \"*.internal.uemlabs.com\" traffic through the Tunnel gateway.",
+              "Step 3: Assign the Tunnel profile to the corporate Salesforce and intranet browser apps.",
+              "Step 4: Verify on the device that opening the internal URL establishes an on-demand VPN icon in the status bar."
+            ],
+            "commands_configs": "// Workspace ONE Tunnel Device Traffic Rules (DTR)\nRule 1:\n  Name: \"Intranet Core\"\n  App: \"com.android.chrome\"\n  Destination: \"*.corp.uemlabs.com:443\"\n  Action: \"TUNNEL\"\n  TunnelGateway: \"uag-edge.uemlabs.com:8443\"\n\nRule 2:\n  Name: \"All Other Traffic\"\n  App: \"ALL\"\n  Destination: \"*\"\n  Action: \"BYPASS\"",
+            "key_takeaways": [
+              "Per-app VPN safeguards corporate networks because unapproved apps cannot traverse the corporate tunnel.",
+              "Device Traffic Rules support domain wildcards, IP CIDR ranges, and port specifications.",
+              "Workspace ONE Tunnel requires client certificates for seamless passwordless authentication."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the primary security advantage of Per-App VPN over traditional full-device VPN?",
+              "options": [
+                "It speeds up device battery charging",
+                "Only approved enterprise apps can access the corporate network; personal apps are prevented from touching internal servers",
+                "It eliminates the need for an internet connection",
+                "It turns on the device camera"
+              ],
+              "answer": 1,
+              "explanation": "Per-App VPN isolates network transmission so only designated corporate apps can tunnel into the internal corporate data center, isolating unmanaged personal traffic."
+            },
+            {
+              "id": "q2",
+              "question": "How does VMware Workspace ONE Tunnel provide secure intranet connectivity for enterprise applications?",
+              "options": [
+                "By establishing a full-device layer 3 VPN that routes all personal traffic through the company datacenter",
+                "By providing per-app micro-segmentation that only routes authorized corporate app traffic through the Tunnel gateway",
+                "By publishing all internal servers to the public internet",
+                "By disabling TLS encryption"
+              ],
+              "answer": 1,
+              "explanation": "Workspace ONE Tunnel utilizes Per-App VPN tunneling, routing only managed corporate application traffic to enterprise resources while leaving personal traffic completely untouched."
+            },
+            {
+              "id": "q3",
+              "question": "What format is used to push customized application configurations directly into managed mobile apps from the Workspace ONE console?",
+              "options": [
+                "AppConfig XML / Managed Configurations key-value pairs",
+                "Raw binary patches",
+                "Unsigned APK files",
+                "Windows registry reg files"
+              ],
+              "answer": 0,
+              "explanation": "The AppConfig standard allows administrators to define key-value configuration dictionaries in the console that are injected directly into compliant enterprise applications upon install."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: Access Integration & SSO",
+          "duration": "45 mins",
+          "summary": "Workspace ONE Access SAML 2.0 federation, conditional access, and passwordless authentication with Mobile SSO.",
+          "details": {
+            "overview": "Workspace ONE Access functions as the identity provider (IdP) and conditional access engine, providing single sign-on across SaaS, web, and native mobile apps using SAML 2.0, OpenID Connect, and Mobile SSO certificate authentication.",
+            "topics": [
+              "Configuring SAML 2.0 federation between Workspace ONE Access and Azure AD / Okta",
+              "Mobile SSO for Android (Cert-based authentication) and iOS (Kerberos / Cert)",
+              "Risk analytics and device posture verification before granting app access",
+              "Multi-Factor Authentication (MFA) step-up challenges based on network IP range"
+            ],
+            "lab_guide": [
+              "Step 1: In Workspace ONE Access, set up an Identity Provider linking to the UEM internal CA.",
+              "Step 2: Create an Access Policy: When authenticating from an enrolled managed device, accept Mobile SSO (cert).",
+              "Step 3: If device is unmanaged, require password + push notification MFA.",
+              "Step 4: Test single sign-on on an enrolled device opening the corporate Workday app."
+            ],
+            "commands_configs": "// SAML 2.0 Identity Assertion Attributes\n<saml:Attribute Name=\"mail\">\n  <saml:AttributeValue>candidate@uemlabs.com</saml:AttributeValue>\n</saml:Attribute>\n<saml:Attribute Name=\"deviceUdid\">\n  <saml:AttributeValue>e8492048fbc09124</saml:AttributeValue>\n</saml:Attribute>\n<saml:Attribute Name=\"complianceStatus\">\n  <saml:AttributeValue>Compliant</saml:AttributeValue>\n</saml:Attribute>",
+            "key_takeaways": [
+              "Mobile SSO eliminates user password prompts by leveraging on-device user certificates.",
+              "Conditional Access evaluates device enrollment state and compliance before issuing an access token.",
+              "SAML assertions can pass custom device tags to cloud applications."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "How does Mobile SSO in Workspace ONE achieve passwordless authentication?",
+              "options": [
+                "By storing user passwords in plain text in browser cache",
+                "By using a secure cryptographic client certificate provisioned onto the enrolled device by the EMM",
+                "By guessing the user birthday",
+                "By dialing the user desk phone"
+              ],
+              "answer": 1,
+              "explanation": "Mobile SSO provisions an identity certificate to the device during enrollment; when accessing enterprise apps, the certificate performs mutual TLS authentication without passwords."
+            },
+            {
+              "id": "q2",
+              "question": "Which component enables Kerberos-based Mobile Single Sign-On (Mobile SSO) for managed iOS devices in Workspace ONE Access?",
+              "options": [
+                "Built-in Kerberos Key Distribution Center (KDC) combined with device identity certificates",
+                "Basic HTTP authentication",
+                "Cleartext LDAP bind",
+                "NTLM v1 challenge-response"
+              ],
+              "answer": 0,
+              "explanation": "Mobile SSO for iOS uses a cloud/on-premises Kerberos KDC adapter that validates the device certificate pushed by Workspace ONE UEM, generating a Kerberos ticket without prompting the user."
+            },
+            {
+              "id": "q3",
+              "question": "What authentication standard is primarily used by Workspace ONE Access to federate identities to SaaS providers like Microsoft 365, Salesforce, and Workday?",
+              "options": [
+                "SAML 2.0 and OpenID Connect (OIDC)",
+                "FTP credentials",
+                "RADIUS PAP",
+                "POP3 authentication"
+              ],
+              "answer": 0,
+              "explanation": "Workspace ONE Access acts as an Identity Provider (IdP) utilizing modern SAML 2.0 and OIDC federation standards for seamless web and cloud application Single Sign-On."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Intelligence & Automated Remediation",
+          "duration": "50 mins",
+          "summary": "Sensor telemetry, digital employee experience score, automated notification bots, and security posture rules.",
+          "details": {
+            "overview": "Workspace ONE Intelligence aggregates big data across endpoints, apps, and networks to deliver actionable insights, digital employee experience (DEX) metrics, and automated remediation workflows.",
+            "topics": [
+              "Creating custom Windows and macOS sensors (PowerShell, Bash, Python)",
+              "Automated remediation workflows: If battery health < 60%, trigger ServiceNow ticket",
+              "Common Vulnerabilities and Exposures (CVE) tracking and OS patch telemetry",
+              "Freestyle Orchestrator multi-step workflow pipelines"
+            ],
+            "lab_guide": [
+              "Step 1: Write a PowerShell sensor that detects whether BitLocker encryption is enabled with a TPM chip.",
+              "Step 2: Build an Intelligence Automation: When sensor BitLocker == False, trigger high-priority alert and apply quarantine tag.",
+              "Step 3: Test sensor evaluation on a staged Windows 11 endpoint.",
+              "Step 4: Review telemetry dashboard."
+            ],
+            "commands_configs": "// Sample PowerShell Sensor for BitLocker Status\n$BitlockerStatus = Get-BitLockerVolume -MountPoint \"C:\"\nif ($BitlockerStatus.VolumeStatus -eq \"FullyEncrypted\") {\n    return \"Encrypted\"\n} else {\n    return \"NotEncrypted\"\n}",
+            "key_takeaways": [
+              "Sensors allow IT to query any hardware or registry parameter not natively exposed in the GUI.",
+              "Automations can interface with external systems like ServiceNow, Slack, and Microsoft Teams.",
+              "Freestyle Orchestrator chains software installs, scripts, and profiles conditionally."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the role of Sensors in Workspace ONE UEM?",
+              "options": [
+                "They measure the ambient room temperature",
+                "They run custom PowerShell or Bash scripts on endpoints to report specific system, registry, or hardware telemetry back to the console",
+                "They detect smoke in the server room",
+                "They turn off the monitor when someone walks away"
+              ],
+              "answer": 1,
+              "explanation": "Sensors execute custom PowerShell, Bash, or Python scripts on managed devices to extract targeted hardware or software parameters and report them back to the EMM."
+            },
+            {
+              "id": "q2",
+              "question": "What is the primary benefit of Workspace ONE Intelligence automated Freestyle Orchestrator workflows?",
+              "options": [
+                "Creating multi-step cross-platform automation that links sensors, scripts, app installs, and remediation actions based on real-time device conditions",
+                "Manually formatting hard drives on schedule",
+                "Sending mass marketing emails to candidates",
+                "Disabling device batteries"
+              ],
+              "answer": 0,
+              "explanation": "Freestyle Orchestrator provides low-code conditional sequencing allowing admins to evaluate device states (Sensors) and conditionally run scripts or deploy software."
+            },
+            {
+              "id": "q3",
+              "question": "How does Workspace ONE Intelligence gather endpoint vulnerability telemetry across managed Windows and macOS fleets?",
+              "options": [
+                "By correlating OS build numbers and patch levels against the National Vulnerability Database (NVD) CVE catalog",
+                "By performing active port scans against employee home routers",
+                "By downloading pirated antivirus definitions",
+                "By reading browser cookies"
+              ],
+              "answer": 0,
+              "explanation": "Workspace ONE Intelligence correlates endpoint inventory data with CVE vulnerability feeds to calculate risk scores and highlight unpatched vulnerabilities."
+            }
+          ]
+        },
+        {
+          "id": "module-6",
+          "name": "Module 6: Windows & macOS Endpoint Management",
+          "duration": "55 mins",
+          "summary": "Modern PC management via CSPs, Windows Update for Business, macOS configuration profiles, and FileVault encryption.",
+          "details": {
+            "overview": "Modern Management replaces legacy on-premises Group Policy Objects (GPOs) and imaging with over-the-air MDM Configuration Service Providers (CSPs), Apple APNs protocols, Windows Autopilot, and Apple Business Manager.",
+            "topics": [
+              "Transitioning from domain-joined GPOs to cloud MDM CSPs",
+              "Windows Autopilot out-of-box provisioning",
+              "macOS automated enrollment via Apple Business Manager (ABM)",
+              "Managing FileVault encryption keys and escrowing Recovery Keys in the console"
+            ],
+            "lab_guide": [
+              "Step 1: Configure a Windows Update for Business profile establishing a 7-day Quality update deferral ring.",
+              "Step 2: Create a BitLocker profile requiring 256-bit XTS-AES encryption and TPM 2.0 protector.",
+              "Step 3: Deploy an enterprise Win32 application packaged as an .intunewin or .zip payload with silent install switches.",
+              "Step 4: Verify escrowed recovery keys in the UEM console Security tab."
+            ],
+            "commands_configs": "// Windows MDM Sync Command in Terminal\n$ deviceenroller.exe /c /urId 92\n\n// Querying MDM Enrollment Status\n$ dsregcmd /status\n// Look for AzureAdJoined: YES and WorkplaceJoined: YES",
+            "key_takeaways": [
+              "Modern PC management allows remote laptops to receive security patches anywhere without connecting to corporate VPN.",
+              "BitLocker and FileVault keys must be escrowed in the EMM to prevent unrecoverable data loss.",
+              "Apple MDM uses the Apple Push Notification service (APNs) as the signaling mechanism."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Why is modern cloud PC management favored over legacy Active Directory GPOs for hybrid workers?",
+              "options": [
+                "Because modern cloud management updates policies and patches over any internet connection without requiring a line-of-sight VPN to an on-prem domain controller",
+                "Because modern management deletes the operating system weekly",
+                "Because GPOs only work on mobile phones",
+                "Because cloud management eliminates the need for software licenses"
+              ],
+              "answer": 0,
+              "explanation": "Modern PC management utilizes cloud MDM channels, enabling remote laptops to receive security baselines, updates, and software over any public Wi-Fi without needing an on-prem domain connection."
+            },
+            {
+              "id": "q2",
+              "question": "Which native Windows enrollment method allows zero-touch provisioning of brand new corporate PCs directly from the OEM box?",
+              "options": [
+                "Windows Autopilot combined with Workspace ONE modern management",
+                "Legacy Ghost imaging over PXE boot",
+                "Manual DVD installer",
+                "Floppy disk provisioning"
+              ],
+              "answer": 0,
+              "explanation": "Windows Autopilot integrates hardware hashes with Entra ID and Workspace ONE to automatically configure, encrypt, and provision Windows 10/11 laptops straight out of the OEM shipping box."
+            },
+            {
+              "id": "q3",
+              "question": "On macOS, which mechanism does Apple mandate for managing system extensions, kernel extensions, and security settings?",
+              "options": [
+                "Apple MDM configuration profiles signed with enterprise certificates",
+                "Disabling System Integrity Protection (SIP) via terminal",
+                "Installing unsigned bash scripts into /etc",
+                "Running root cron jobs"
+              ],
+              "answer": 0,
+              "explanation": "Apple strictly requires MDM configuration profiles for managing privacy preferences (PPPC), system extensions, and FileVault encryption on modern macOS versions."
+            }
+          ]
+        }
+      ]
+    },
+    "soti-mobicontrol": {
+      "name": "SOTI MobiControl Mastery",
+      "category": "Rugged & Enterprise Fleet Mobility",
+      "instructor": "Senior SOTI Deployment Engineer",
+      "description": "End-to-end administration of SOTI MobiControl: deployment servers, device add rules, custom scripting engine, and lockdown kiosk profiles.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Architecture, Deployment Servers & Agents",
+          "duration": "45 mins",
+          "summary": "Deployment Server setup, Management Service, database sizing, and agent generation for varied OS builds.",
+          "details": {
+            "overview": "SOTI MobiControl is a market leader for rugged, frontline, and industrial mobile computing. Its architecture consists of the Management Service, Deployment Server (DS), MS SQL Database, and on-device MobiControl Agents communicating over persistent TCP/WebSocket connections.",
+            "topics": [
+              "MobiControl architecture: Management Server vs Deployment Server (DS)",
+              "Generating customized Android, Zebra, and Windows CE/Embedded agents",
+              "SOTI Cloud Link for on-premises resource bridging",
+              "Deployment Server load balancing and high-availability sizing"
+            ],
+            "lab_guide": [
+              "Step 1: Open the MobiControl Administration Utility (MCAU) and verify Deployment Server status.",
+              "Step 2: Generate a custom Android Enterprise agent bound to your production server URL.",
+              "Step 3: Staging via MobiControl enrollment barcode on a Zebra TC57.",
+              "Step 4: Verify agent connectivity and status in the web console."
+            ],
+            "commands_configs": "// Agent Enrollment Parameter String\nserverurl=https://ds01.uemlabs.com:443;enrollmentid=UEM_CORP_LOGISTICS;user=svc_enroll;devicename=%IMEI%",
+            "key_takeaways": [
+              "The Deployment Server manages direct communication with devices; multiple DS nodes can be clustered.",
+              "Agent generation allows embedding enrollment credentials for one-scan provisioning.",
+              "MobiControl supports Android, iOS, Windows, Linux, and legacy Windows Mobile/CE."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Which component in SOTI MobiControl directly handles real-time socket connections to enrolled devices?",
+              "options": [
+                "Deployment Server (DS)",
+                "Management Service",
+                "Reporting Database",
+                "Web Console Client"
+              ],
+              "answer": 0,
+              "explanation": "The Deployment Server (DS) is the core high-performance engine that maintains real-time TCP/WebSocket sockets with devices for instant command execution."
+            },
+            {
+              "id": "q2",
+              "question": "Which server component in SOTI MobiControl handles real-time device check-in, script execution, and policy delivery?",
+              "options": [
+                "SOTI Deployment Server (DS)",
+                "SOTI Management Server (MS)",
+                "SOTI Database Server",
+                "SOTI Search Indexer"
+              ],
+              "answer": 0,
+              "explanation": "The Deployment Server (DS) is the core engine that maintains persistent TCP connections with endpoint agents, executing scripts and streaming device data."
+            },
+            {
+              "id": "q3",
+              "question": "What protocol and default port does the SOTI MobiControl device agent use to connect securely to the Deployment Server?",
+              "options": [
+                "Encrypted TLS over TCP port 5494 (or 443)",
+                "Plain HTTP over port 80",
+                "Telnet over port 23",
+                "TFTP over port 69"
+              ],
+              "answer": 0,
+              "explanation": "SOTI MobiControl agents communicate with Deployment Servers over port 5494 (or 443 in modern HTTPS setups) protected by mutual TLS certificates."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Rule Configuration & Device Add Rules",
+          "duration": "40 mins",
+          "summary": "Device Connection Rules, enrollment enrollment IDs, automated device naming, and folder grouping logic.",
+          "details": {
+            "overview": "Device Add Rules define how new devices enter the MobiControl system. Through Enrollment IDs, rules determine the destination device group folder, naming conventions using macros (e.g., %MAC%, %SERIAL%, %IMEI%), authentication requirements, and initial profile bindings.",
+            "topics": [
+              "Configuring Device Add Rules for Android Enterprise, iOS, and Windows",
+              "Device naming macros and automated prefixing (e.g. WH04-TC52-%SERIAL%)",
+              "Auto-grouping devices based on IP subnets, carrier APNs, or enrollment credentials",
+              "File Sync Rules and Device Relocation Rules"
+            ],
+            "lab_guide": [
+              "Step 1: In the MobiControl console, navigate to the Rules tab > Add Rule > Device Add Rule.",
+              "Step 2: Select Android Enterprise > Managed Google Play.",
+              "Step 3: Configure Device Naming formula: \"ZBR-%MODEL%-%MAC:6%\".",
+              "Step 4: Set the Target Folder to \"Corporate Logistics / Chicago Distribution Center\"."
+            ],
+            "commands_configs": "// Device Naming Macro Pattern Examples\nPrefix: WH01-\nMacro 1: %MODEL%\nMacro 2: -\nMacro 3: %SERIAL%\nResult: WH01-TC52-20188402",
+            "key_takeaways": [
+              "Enrollment IDs allow frontline workers to provision devices with a short code without entering passwords.",
+              "Relocation rules automatically move devices between folders if their Wi-Fi BSSID or IP changes.",
+              "Consistent device naming prevents inventory duplicates in large enterprise fleets."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What macro in SOTI MobiControl device naming resolves to the device hardware serial number?",
+              "options": [
+                "%SERIAL%",
+                "%NAME%",
+                "%SECRET%",
+                "%PASS%"
+              ],
+              "answer": 0,
+              "explanation": "%SERIAL% dynamically queries the hardware manufacturer serial number from the kernel and embeds it into the device display name."
+            },
+            {
+              "id": "q2",
+              "question": "What is the purpose of an Enrollment URL or Enrollment ID in a SOTI Device Add Rule?",
+              "options": [
+                "It routes the enrolling device to the correct Deployment Server and assigns it to a target device group automatically",
+                "It formats the device SD card",
+                "It changes the device cellular carrier",
+                "It purchases Play Store gift cards"
+              ],
+              "answer": 0,
+              "explanation": "An Enrollment ID maps the endpoint to a specific Device Add Rule, defining authentication requirements, target device groups, and initial profile baselines."
+            },
+            {
+              "id": "q3",
+              "question": "How can an administrator enforce user authentication during SOTI enrollment?",
+              "options": [
+                "By integrating Active Directory / Azure AD (Entra ID) into the Device Add Rule credentials requirement",
+                "By asking users to mail their employee badge to IT",
+                "By requiring a captcha on every reboot",
+                "By setting a static pin for the entire company"
+              ],
+              "answer": 0,
+              "explanation": "SOTI Device Add Rules can be linked to LDAP/AD or Entra ID so users must enter corporate credentials before the device registers."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: Package Studio & Scripting Engine",
+          "duration": "50 mins",
+          "summary": "Build .pcg deployment packages, pre/post installation scripts, writefile commands, and intent broadcasts.",
+          "details": {
+            "overview": "SOTI Package Studio allows engineers to package apps, configurations, drivers, and files into compressed `.pcg` deployment bundles. SOTI’s built-in script engine supports deep device manipulation using legacy syntax and modern JavaScript scripts.",
+            "topics": [
+              "Creating multi-file packages in SOTI Package Studio (.pcg)",
+              "Pre-install and Post-install execution scripts",
+              "SOTI Script commands: `writeprivateprofstring`, `sendintent`, `install`, `del`",
+              "JavaScript engine in MobiControl for advanced conditional device logic"
+            ],
+            "lab_guide": [
+              "Step 1: Open SOTI Package Studio and add an APK plus a custom configuration file \"config.json\".",
+              "Step 2: Write a post-install script: writeprivateprofstring to configure internal flags.",
+              "Step 3: Build the .pcg package and upload it to the MobiControl Package Library.",
+              "Step 4: Assign the package to a test device profile and verify deployment."
+            ],
+            "commands_configs": "// Sample SOTI Scripting Syntax\n// Write configuration parameter to internal storage\nwriteprivateprofstring /sdcard/Android/data/com.corp.app/settings.ini Config ServerURL \"https://prod.uemlabs.com\"\n\n// Broadcast an Android Intent to reload application settings\nsendintent -a \"com.corp.app.ACTION_RELOAD_SETTINGS\" --es \"token\" \"AUTH99\"\n\n// Restart application\nkillapp com.corp.app\nstart com.corp.app/.MainActivity",
+            "key_takeaways": [
+              "Packages can contain pre-scripts to terminate running processes before applying an update.",
+              "SOTI scripts execute with root or device-owner system privileges on supported OEM hardware.",
+              "JavaScript scripting in MobiControl v15+ allows HTTP REST calls directly from on-device scripts."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Which SOTI script command sends a standard Android Intent broadcast to an installed application?",
+              "options": [
+                "sendintent",
+                "broadcast_msg",
+                "sms_dispatch",
+                "intent_post"
+              ],
+              "answer": 0,
+              "explanation": "`sendintent` is the native SOTI script command used to dispatch explicit and implicit Android Intents, pass extra flags, and wake up background receivers."
+            },
+            {
+              "id": "q2",
+              "question": "Which SOTI script command is used to silently install an Android APK package located in the device temporary storage?",
+              "options": [
+                "install -installflags \"...\" /sdcard/app.apk",
+                "apt-get install app",
+                "run app.exe",
+                "msiexec /i app"
+              ],
+              "answer": 0,
+              "explanation": "SOTI scripting engine uses `install` (or `install -installflags` on Android+) to programmatically deploy and upgrade application packages silently."
+            },
+            {
+              "id": "q3",
+              "question": "What utility in SOTI MobiControl packages applications, scripts, and pre-requisite files into a deployable .pcg package?",
+              "options": [
+                "SOTI Package Studio",
+                "Windows Notepad",
+                "Adobe Acrobat",
+                "SOTI MobiControl Helpdesk"
+              ],
+              "answer": 0,
+              "explanation": "SOTI Package Studio builds .pcg packages containing payload files along with pre-install and post-install automation scripts."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: Remote Control & Diagnostic Tools",
+          "duration": "35 mins",
+          "summary": "Real-time HTML5 remote screen capture, file explorer transfer, terminal execution, and device event logs.",
+          "details": {
+            "overview": "MobiControl features a comprehensive Remote Control suite that allows helpdesk technicians to view and control endpoints in real time, browse the remote filesystem, pull diagnostic logs, and terminate processes without interrupting the user.",
+            "topics": [
+              "HTML5 Web Remote Control vs Java Remote Control Plugin",
+              "Remote File Explorer: Uploading, downloading, and editing files on the fly",
+              "Remote Task Manager: Inspecting CPU, memory, and terminating frozen tasks",
+              "Command-line console execution on remote endpoints"
+            ],
+            "lab_guide": [
+              "Step 1: Locate an active device in the MobiControl console and click \"Remote Control\".",
+              "Step 2: Use the keyboard shortcuts to simulate Android hardware buttons (Home, Back, Recent Apps).",
+              "Step 3: Open the Remote File Explorer and retrieve the application log file from /sdcard/Download/.",
+              "Step 4: Send a remote script command to flush DNS cache."
+            ],
+            "commands_configs": "// Remote Terminal Quick Commands\n$ netstat -an\n$ getprop ro.build.version.release\n$ ping -c 4 gateway.uemlabs.com",
+            "key_takeaways": [
+              "Remote control on rugged devices (Zebra, Honeywell) requires no user acceptance prompt if configured in policy.",
+              "File explorer transfers bypass the need to connect endpoints via physical USB cables.",
+              "Session recording can be mandated for compliance and auditing."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Can helpdesk administrators transfer files directly to and from a remote Android device using SOTI Remote Control without a physical USB cable?",
+              "options": [
+                "Yes, using the integrated Remote File Explorer over the active network connection",
+                "No, files can only be transferred with an SD card adapter",
+                "Only if Bluetooth is enabled",
+                "Only between 9 AM and 5 PM"
+              ],
+              "answer": 0,
+              "explanation": "The Remote File Explorer in SOTI Remote Control allows bidirectional file transfers, renaming, and permission edits over cellular or Wi-Fi."
+            },
+            {
+              "id": "q2",
+              "question": "What is the key advantage of SOTI Assist when troubleshooting frontline warehouse devices?",
+              "options": [
+                "It provides remote screen sharing, file transfer, process inspection, and integrated ticketing directly from the MobiControl console",
+                "It restarts warehouse conveyor belts",
+                "It replaces damaged screens physically",
+                "It prints shipping labels"
+              ],
+              "answer": 0,
+              "explanation": "SOTI Assist is an integrated remote support and diagnostics solution providing live screen control, event logs, file syncing, and ticket management for frontline fleets."
+            },
+            {
+              "id": "q3",
+              "question": "How can a technician inspect background processes and kill a frozen application on a remote Android scanner via SOTI?",
+              "options": [
+                "Using the SOTI Remote Control Task Manager tab or sending the kill_process script command",
+                "By power cycling the entire facility",
+                "By waiting for the battery to drain completely",
+                "By sending an SMS"
+              ],
+              "answer": 0,
+              "explanation": "SOTI remote control includes a Task Manager tab showing live CPU/RAM usage per process, allowing technicians to kill or inspect hung processes remotely."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Lockdown / Kiosk Mode & Profiles",
+          "duration": "45 mins",
+          "summary": "Interactive kiosk template creation, single-app and multi-app lockdowns, status bar hiding, and auth pins.",
+          "details": {
+            "overview": "MobiControl Lockdown replaces the standard Android home screen with a secure, branded kiosk shell. Users can only launch authorized corporate apps, preventing access to the device settings, YouTube, browser, or unapproved features.",
+            "topics": [
+              "Single-app lockdown (Kiosk) vs Multi-app launcher",
+              "HTML5 template design with custom corporate logos and status indicators (Wi-Fi, Battery)",
+              "Disabling notification pulldowns, status bars, and USB debugging",
+              "Administrator bypass passwords to unlock standard launcher in the field"
+            ],
+            "lab_guide": [
+              "Step 1: In Profiles, select Android Enterprise > Configuration > Lockdown.",
+              "Step 2: Add two applications: \"Inventory Scanner\" and \"Package Dispatch\".",
+              "Step 3: Check \"Disable System Status Bar\" and set an Admin Bypass Password.",
+              "Step 4: Apply profile to test device and confirm the standard Android launcher is blocked."
+            ],
+            "commands_configs": "// HTML Template Variable Macros for Custom SOTI Lockdown\n<div class=\"header\">\n  <img src=\"logo.png\">\n  <span>Device: %SERIAL%</span>\n  <span>IP: %IP%</span>\n  <span>Battery: <MCLinkVar name=\"BatteryLevel\"/>%</span>\n</div>\n<div class=\"grid\">\n  <MCLink1><img src=\"icon1.png\"><span>Warehouse App</span></MCLink1>\n  <MCLink2><img src=\"icon2.png\"><span>Support Chat</span></MCLink2>\n</div>",
+            "key_takeaways": [
+              "Lockdown prevents workers from tampering with device settings or installing games.",
+              "Custom HTML/CSS templates allow companies to create branded corporate interfaces.",
+              "Admin bypass credentials allow on-site supervisors to troubleshoot without revoking the profile."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the primary function of the SOTI MobiControl Lockdown profile?",
+              "options": [
+                "To restrict user access strictly to authorized enterprise applications and block access to unapproved settings and apps",
+                "To encrypt the device hard drive with BitLocker",
+                "To set the device wallpaper to a random photo",
+                "To turn off the Wi-Fi card permanently"
+              ],
+              "answer": 0,
+              "explanation": "Lockdown replaces the standard Android launcher with a secure kiosk shell that strictly limits user interaction to approved enterprise applications."
+            },
+            {
+              "id": "q2",
+              "question": "How does SOTI MobiControl generate customized kiosk home screens for rugged shift workers?",
+              "options": [
+                "By rendering an HTML/CSS lockdown template that restricts access strictly to allowed app shortcuts and system settings",
+                "By physically soldering buttons on the motherboard",
+                "By deleting the Android operating system",
+                "By turning off the screen backlight"
+              ],
+              "answer": 0,
+              "explanation": "SOTI Lockdown mode replaces the system launcher with an HTML template presenting only approved icons, preventing users from tampering with settings or games."
+            },
+            {
+              "id": "q3",
+              "question": "What keyboard shortcut or gesture allows a field supervisor to temporarily exit SOTI Lockdown mode and access native Android settings?",
+              "options": [
+                "An administrator password bypass configured in the Lockdown Profile",
+                "Pressing the power button 10 times",
+                "Unplugging the device antenna",
+                "Removing the battery"
+              ],
+              "answer": 0,
+              "explanation": "Administrators can set an Admin Exit Password in the Lockdown profile so technicians can access native settings on-site without unenrolling the device."
+            }
+          ]
+        },
+        {
+          "id": "module-6",
+          "name": "Module 6: Zebra StageNow Integration & OTA",
+          "duration": "50 mins",
+          "summary": "Generate StageNow barcodes with MobiControl enrollment payload, OS firmware updates, and rapid unbox staging.",
+          "details": {
+            "overview": "Zebra StageNow is the industry standard for staging Zebra mobile computers. By combining StageNow XML profiles with SOTI MobiControl, administrators can stage an entire warehouse fleet in minutes by scanning a single 2D barcode.",
+            "topics": [
+              "Zebra StageNow Workstation architecture and MX (Mobility Extensions)",
+              "Generating 2D StageNow barcodes with Wi-Fi, NTP, and SOTI Agent payloads",
+              "Over-the-Air (OTA) OS firmware updates using Zebra LifeGuard",
+              "Battery lifecycle and touch screen sensitivity profiles (glove mode, rain mode)"
+            ],
+            "lab_guide": [
+              "Step 1: Open Zebra StageNow Workstation and create a \"Connect Wi-Fi & Enroll in MDM\" profile.",
+              "Step 2: Embed the enterprise staging WPA2-Enterprise credentials and MobiControl APK download URL.",
+              "Step 3: Generate a PDF staging sheet with the 2D Aztec/DataMatrix barcode.",
+              "Step 4: Unbox a brand-new Zebra scanner, scan the barcode, and observe automated staging."
+            ],
+            "commands_configs": "// Zebra StageNow MX XML Payload Snippet\n<wap-provisioningdoc>\n  <characteristic type=\"Profile\">\n    <parm name=\"ProfileName\" value=\"SotiEnrollment\"/>\n    <characteristic type=\"Wi-Fi\">\n      <parm name=\"SSID\" value=\"CorpWarehouse\"/>\n      <parm name=\"SecurityMode\" value=\"WPA2-PSK\"/>\n      <parm name=\"PreSharedKey\" value=\"ZbrSecureStaging99!\"/>\n    </characteristic>\n    <characteristic type=\"AppMgr\">\n      <parm name=\"Action\" value=\"Install\"/>\n      <parm name=\"APK\" value=\"https://ds.uemlabs.com/agents/mobicontrol.apk\"/>\n    </characteristic>\n  </characteristic>\n</wap-provisioningdoc>",
+            "key_takeaways": [
+              "StageNow barcodes allow staging without typing Wi-Fi passwords or enrollment URLs.",
+              "Zebra LifeGuard OTA updates can be scheduled through MobiControl to prevent shift downtime.",
+              "MX allows configuring hardware scanner engines, touch modes, and physical audio volumes."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "How do warehouse technicians typically stage a new Zebra rugged handheld using StageNow?",
+              "options": [
+                "By scanning a 2D configuration barcode printed on a paper sheet or displayed on a monitor",
+                "By typing 40-character URLs manually using on-screen keyboard",
+                "By calling customer service on the telephone",
+                "By dismantling the battery compartment"
+              ],
+              "answer": 0,
+              "explanation": "Technicians simply power on the device and scan the StageNow 2D barcode, which instantly programs Wi-Fi, clock, certificates, and initiates MDM enrollment."
+            },
+            {
+              "id": "q2",
+              "question": "How does SOTI MobiControl integrate with Zebra StageNow for rapid device staging?",
+              "options": [
+                "By scanning a StageNow 2D barcode that automatically connects to Wi-Fi, downloads the SOTI agent, and executes the Enrollment ID",
+                "By typing 100 lines of code manually on each scanner",
+                "By connecting each device to a desktop computer via serial cable",
+                "By Bluetooth pairing with a microwave"
+              ],
+              "answer": 0,
+              "explanation": "Zebra StageNow encodes Wi-Fi credentials and agent download instructions into barcodes or NFC tags for one-scan automated enrollment into SOTI."
+            },
+            {
+              "id": "q3",
+              "question": "Which Zebra firmware subsystem does SOTI configure when deploying OEMConfig or MX XML profiles?",
+              "options": [
+                "Zebra Mobility Extensions (MX)",
+                "Linux Wine",
+                "BIOS ROM",
+                "Android Recovery Kernel"
+              ],
+              "answer": 0,
+              "explanation": "Zebra MX (Mobility Extensions) provides an enterprise-ready software layer on Zebra Android devices that exposes hardware settings to EMMs like SOTI."
+            }
+          ]
+        }
+      ]
+    },
+    "ivanti-neurons": {
+      "name": "Ivanti Neurons for UEM",
+      "category": "Hyper-Automated Endpoint Management",
+      "instructor": "Ivanti Solutions Architect",
+      "description": "Autonomous endpoint discovery, real-time edge intelligence sensors, machine learning vulnerability remediation, and MobileIron cloud migration.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Neurons Discovery & Asset Inventory",
+          "duration": "40 mins",
+          "summary": "Active and passive network discovery, asset reconciliation, agentless sensor queries, and normalized hardware inventory.",
+          "details": {
+            "overview": "Ivanti Neurons for Discovery provides 360-degree visibility across the IT estate. Combining active network scanning, passive listening, and agentless connectors, it discovers unknown shadow IT endpoints and reconciles them into an actionable inventory.",
+            "topics": [
+              "Active subnet discovery vs passive network eavesdropping",
+              "Reconciling duplicate assets across Active Directory, Azure AD, SCCM, and Intune",
+              "Normalizing software titles and identifying unused software licenses",
+              "Edge agent deployment for continuous telemetry collection"
+            ],
+            "lab_guide": [
+              "Step 1: Configure a Discovery Connector linked to your enterprise virtualization cluster.",
+              "Step 2: Run a subnet discovery sweep on 10.200.0.0/24.",
+              "Step 3: Review the Asset Reconciliation dashboard to merge duplicate entries.",
+              "Step 4: Tag newly discovered unmanaged devices for automated onboarding."
+            ],
+            "commands_configs": "// Neurons Discovery Connector JSON Config\n{\n  \"scanType\": \"ActiveSubnet\",\n  \"targetSubnets\": [\"10.200.10.0/24\", \"10.200.20.0/24\"],\n  \"protocols\": [\"SNMPv3\", \"WMI\", \"SSH\"],\n  \"credentialsId\": \"CRED_VAULT_IT_PROD\",\n  \"schedule\": \"0 2 * * *\"\n}",
+            "key_takeaways": [
+              "Asset reconciliation prevents duplicate licensing costs by merging multiple agent records for the same device.",
+              "Passive discovery alerts IT the instant an unauthorized rogue device connects to corporate Ethernet.",
+              "Normalizing software titles simplifies vendor audit compliance."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the main benefit of asset reconciliation in Ivanti Neurons?",
+              "options": [
+                "It merges multiple discovery records for the same physical computer into one single accurate asset view",
+                "It permanently erases all log files",
+                "It creates multiple fake computer names",
+                "It slows down network transmission"
+              ],
+              "answer": 0,
+              "explanation": "Asset reconciliation uses machine learning to match serial numbers, MAC addresses, and hostnames across disparate data sources, merging duplicates into one unified record."
+            },
+            {
+              "id": "q2",
+              "question": "How does Ivanti Neurons active and passive discovery identify unmanaged devices on a corporate subnet?",
+              "options": [
+                "By listening to ARP requests, network broadcasts, and running authenticated WMI/SSH probes to discover rogue endpoints",
+                "By asking employees to report their colleagues",
+                "By checking social media check-ins",
+                "By monitoring phone calls"
+              ],
+              "answer": 0,
+              "explanation": "Ivanti Neurons combines passive listening (ARP/DHCP sniffing) and active subnet scanning to discover unmanaged devices and shadow IT before they access corporate resources."
+            },
+            {
+              "id": "q3",
+              "question": "What lightweight agent component is deployed to endpoints to stream hardware, software, and health telemetry to Ivanti Neurons?",
+              "options": [
+                "Ivanti Neurons Agent",
+                "Windows Media Player",
+                "Internet Explorer plugin",
+                "Adobe Flash player"
+              ],
+              "answer": 0,
+              "explanation": "The Ivanti Neurons Agent provides endpoint discovery, self-healing automation, and patch compliance telemetry with minimal CPU overhead."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Automated Remediation Bots",
+          "duration": "45 mins",
+          "summary": "Deploy pre-packaged and custom Neurons bots to detect and self-heal disk latency, crashed services, and corrupted agents.",
+          "details": {
+            "overview": "Neurons Bots provide autonomous self-healing for endpoints. By running background diagnostics, bots detect issues (e.g., failed antivirus service, impending disk failure, corrupt registry keys) and automatically resolve them before the user notices a problem.",
+            "topics": [
+              "Neurons Bot triggers: Scheduled, Telemetry threshold, and Event-based",
+              "Pre-packaged self-healing bots: Spooler restart, Disk cleanup, Certificate renewal",
+              "Building custom bot logic flows with branching conditional decisions",
+              "Interactive vs silent bot execution"
+            ],
+            "lab_guide": [
+              "Step 1: In the Neurons console, navigate to Automation > Bots > Create Bot.",
+              "Step 2: Set trigger: Daily at 06:00 AM on all Sales Department laptops.",
+              "Step 3: Add Action: Check status of \"CrowdStrike Falcon Sensor\" service.",
+              "Step 4: Add Remediation: If status == Stopped, attempt restart; if still failing, notify IT alert channel."
+            ],
+            "commands_configs": "// Sample Bot Flow Definition\nTrigger:\n  Condition: \"Low Disk Space < 10%\"\nAction:\n  - Step 1: Run System Cleanmgr temp file purge\n  - Step 2: Empty Recycle Bin\n  - Step 3: Re-evaluate Disk Space\n  - Branch:\n      If Disk Space > 15%: Send \"Resolved\" notification to log\n      Else: Create ServiceNow Incident Priority 3",
+            "key_takeaways": [
+              "Autonomous bots reduce helpdesk ticket volume by self-healing common recurring issues.",
+              "Bots run locally at the edge, executing even when endpoints are offline from the cloud.",
+              "Always test custom bots on a pilot group before broad enterprise rollout."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "How do Ivanti Neurons Bots reduce helpdesk ticket volume?",
+              "options": [
+                "By automatically detecting and self-healing common system faults (like crashed services or low disk space) before users submit tickets",
+                "By deleting user email accounts",
+                "By turning off the phone lines in the IT department",
+                "By preventing users from submitting questions"
+              ],
+              "answer": 0,
+              "explanation": "Neurons Bots autonomously detect and remediate endpoint issues in the background, eliminating the primary causes of level-1 helpdesk support tickets."
+            },
+            {
+              "id": "q2",
+              "question": "What are Neurons Bots in the Ivanti platform?",
+              "options": [
+                "Autonomous self-healing automation routines that detect endpoint issues (e.g. hung services, low disk space, crashing apps) and resolve them without human intervention",
+                "Chatbots that generate fake reviews",
+                "Discord gaming bots",
+                "Voice assistants for music playback"
+              ],
+              "answer": 0,
+              "explanation": "Neurons Bots run diagnostic checks continuously and automatically execute remediation scripts when common IT issues or configuration drifts are detected."
+            },
+            {
+              "id": "q3",
+              "question": "Which metric measures the reduction in helpdesk tickets achieved by automated Neurons self-healing bots?",
+              "options": [
+                "First-Contact Resolution (FCR) and Shift-Left MTTR (Mean Time to Resolution)",
+                "Screen resolution DPI",
+                "Keyboard typing speed",
+                "Battery temperature"
+              ],
+              "answer": 0,
+              "explanation": "Self-healing bots shift resolution left to Tier 0, solving problems before employees notice them and reducing Mean Time to Resolution (MTTR)."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: Patch Intelligence & Zero-Day Updates",
+          "duration": "50 mins",
+          "summary": "Risk-based vulnerability scoring, threat-aware patch testing, pilot rings, and automated endpoint patching schedules.",
+          "details": {
+            "overview": "Ivanti Neurons for Patch Intelligence shifts IT from reactive patch cycles to threat-aware vulnerability remediation. By correlating CVE data with active exploit intelligence, it prioritizes critical patches that protect against active ransomware and zero-day threats.",
+            "topics": [
+              "VRR (Vulnerability Risk Rating) vs generic CVSS scores",
+              "Correlating patches with known active ransomware campaigns",
+              "Staged deployment rings: Canary, Pilot, Broad, and Critical Server groups",
+              "Automated rollback triggers if patch reliability threshold drops"
+            ],
+            "lab_guide": [
+              "Step 1: Open the Patch Intelligence dashboard and filter for \"Actively Weaponized Vulnerabilities\".",
+              "Step 2: Create a Patch Group for third-party applications (Chrome, Zoom, Adobe Acrobat).",
+              "Step 3: Schedule a Pilot Ring rollout to 5% of devices with a 48-hour soak window.",
+              "Step 4: Monitor installation success rate and patch reboot prompts."
+            ],
+            "commands_configs": "// Patch Policy Schedule Configuration\n{\n  \"policyName\": \"Critical-ZeroDay-Windows\",\n  \"severityFilter\": [\"Critical\", \"High\"],\n  \"weaponizedOnly\": true,\n  \"rebootBehavior\": \"PromptUserWithCountdown\",\n  \"countdownMinutes\": 60,\n  \"deferralMaxDays\": 3\n}",
+            "key_takeaways": [
+              "Generic CVSS scores lack real-world context; weaponized threat intelligence identifies true operational risk.",
+              "Third-party application vulnerabilities represent over 70% of endpoint attack surfaces.",
+              "Configurable reboot countdowns prevent accidental data loss for active employees."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Why is threat-aware patch prioritization superior to simply patching everything by date?",
+              "options": [
+                "It focuses immediate patching efforts on vulnerabilities that are actively weaponized and exploited by ransomware in the wild",
+                "It requires no network bandwidth",
+                "It skips all Windows security updates",
+                "It lets users choose whether they want security or not"
+              ],
+              "answer": 0,
+              "explanation": "Threat-aware patch prioritization identifies vulnerabilities currently being exploited in live attacks, allowing IT to remediate high-risk vectors immediately."
+            },
+            {
+              "id": "q2",
+              "question": "How does Ivanti Patch Intelligence prioritize CVE vulnerabilities for enterprise patching?",
+              "options": [
+                "By correlating CVSS severity scores with active threat actor exploitability and real-world weaponization telemetry",
+                "By releasing patches randomly",
+                "By alphabetically sorting software names",
+                "By patching whichever app was installed first"
+              ],
+              "answer": 0,
+              "explanation": "Ivanti Patch Intelligence uses machine learning and threat feeds to focus patching efforts on vulnerabilities that are actively being weaponized by adversaries in the wild."
+            },
+            {
+              "id": "q3",
+              "question": "In Ivanti Neurons Patch for Endpoints, what capability allows patching mobile remote workers who never connect to the office VPN?",
+              "options": [
+                "Cloud-native patch distribution directly from global CDNs over HTTPS",
+                "Requiring all workers to fly to the corporate headquarters",
+                "Delivering USB thumb drives via postal mail",
+                "Printing patch binary code on paper"
+              ],
+              "answer": 0,
+              "explanation": "Ivanti Neurons delivers cloud-native patch content over HTTPS directly to endpoints wherever they are connected to the internet."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: MobileIron Cloud / Core Migration",
+          "duration": "45 mins",
+          "summary": "Tenant linking, policy transition from MobileIron Core to Neurons, certificate authority sync, and device re-homing.",
+          "details": {
+            "overview": "Following the acquisition of MobileIron, organizations with legacy MobileIron Core (on-prem) or MobileIron Cloud tenants must migrate to modern Ivanti Neurons for UEM. This lesson covers seamless tenant linking, policy mapping, and zero-touch device migration.",
+            "topics": [
+              "Tenant linking architecture between MobileIron Core and Ivanti Neurons",
+              "Automated translation of MobileIron Labels to Neurons Device Groups",
+              "Over-the-Air device re-homing without requiring factory resets",
+              "Verifying PKI and Sentry Gateway traffic transitions"
+            ],
+            "lab_guide": [
+              "Step 1: Install the Neurons Connector on the MobileIron Core appliance.",
+              "Step 2: Sync device inventories, labels, and configurations into the Neurons cloud tenant.",
+              "Step 3: Execute a migration batch on a pilot department to repoint the agent management URL.",
+              "Step 4: Confirm endpoint check-in and certificate validation in the Neurons console."
+            ],
+            "commands_configs": "// MobileIron Core CLI Status Verification\n# show services\n# show sopt\n# show mdm checkin-status\n# ping neurons-cloud.ivanti.com",
+            "key_takeaways": [
+              "Tenant linking allows administrators to manage legacy Core endpoints from the Neurons cloud console.",
+              "Seamless re-homing eliminates the need to recall devices or ask users to re-enroll.",
+              "Certificate authority continuity ensures Wi-Fi and VPN access remains uninterrupted."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the primary objective of tenant linking when migrating from MobileIron Core to Ivanti Neurons?",
+              "options": [
+                "To manage existing on-prem endpoints from the modern cloud interface without forcing user re-enrollment",
+                "To cancel cloud internet connections",
+                "To convert all computers into mobile phones",
+                "To erase employee emails"
+              ],
+              "answer": 0,
+              "explanation": "Tenant linking connects the on-premise MobileIron Core database with the Neurons cloud platform, enabling centralized cloud management without disrupting enrolled devices."
+            },
+            {
+              "id": "q2",
+              "question": "When migrating legacy MobileIron Core (EPMM) tenants to Ivanti Neurons for UEM, how are device ownership and policies transitioned?",
+              "options": [
+                "Through automated cloud migration bridges that map labels and configurations to modern Neurons policy sets with minimal user re-enrollment",
+                "By wiping every phone and firing all users",
+                "By buying new phones for every employee",
+                "By disabling email completely"
+              ],
+              "answer": 0,
+              "explanation": "Ivanti provides cloud migration tooling that transfers device records, labels, and configurations from on-premises MobileIron Core into cloud-hosted Neurons."
+            },
+            {
+              "id": "q3",
+              "question": "Which protocol does MobileIron / Ivanti use to secure corporate traffic from mobile devices to internal intranets?",
+              "options": [
+                "MobileIron Sentry (AppConnect and Tunnel per-app VPN)",
+                "Open Telnet",
+                "Unsecured HTTP",
+                "PPTP over dial-up"
+              ],
+              "answer": 0,
+              "explanation": "MobileIron Sentry provides secure reverse-proxy and per-app VPN tunneling for mobile devices accessing on-premises Exchange and web resources."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Edge Intelligence & Machine Learning",
+          "duration": "40 mins",
+          "summary": "Natural language queries across thousands of edge endpoints in seconds, battery degradation alerts, and performance metrics.",
+          "details": {
+            "overview": "Edge Intelligence queries tens of thousands of endpoints in real time (within 1–3 seconds) using sub-second peer-to-peer and edge search algorithms. IT teams can ask natural-language questions to diagnose performance spikes, battery failures, and network latency.",
+            "topics": [
+              "Sub-second query execution across distributed global endpoints",
+              "Natural Language Query (NLQ) engine: \"Show laptops with battery health < 50%\"",
+              "Real-time CPU and memory hog identification across user fleets",
+              "Benchmarking Digital Employee Experience (DEX) scores across business units"
+            ],
+            "lab_guide": [
+              "Step 1: In the Edge Intelligence console, enter query: \"Processes with CPU usage > 80%\".",
+              "Step 2: Identify rogue runaway processes across the fleet in real-time.",
+              "Step 3: Execute a remote kill command across affected endpoints.",
+              "Step 4: View the DEX trend graph after remediation."
+            ],
+            "commands_configs": "// Edge Intelligence Query Examples\nSELECT hostname, username, battery_wear_percent FROM devices WHERE battery_wear_percent > 40;\nSELECT process_name, cpu_percent FROM processes WHERE cpu_percent > 75 ORDER BY cpu_percent DESC;",
+            "key_takeaways": [
+              "Edge Intelligence retrieves live device state without querying stale database records.",
+              "DEX scoring measures boots, app crashes, and latency to detect employee dissatisfaction early.",
+              "Immediate peer-to-peer data retrieval speeds up live incident response."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "How fast can Ivanti Edge Intelligence return live system data from tens of thousands of endpoints?",
+              "options": [
+                "Within seconds (typically 1 to 3 seconds)",
+                "It takes 4 to 6 business days",
+                "Only during overnight backup windows",
+                "It requires manual user submission"
+              ],
+              "answer": 0,
+              "explanation": "Edge Intelligence queries endpoints in real time, gathering live sensor responses across tens of thousands of connected machines within seconds."
+            },
+            {
+              "id": "q2",
+              "question": "What is the primary query engine used by Ivanti Neurons Edge Intelligence to query live endpoints in under 10 seconds?",
+              "options": [
+                "Real-time distributed edge processing querying RAM, disk, event logs, and network state across thousands of endpoints simultaneously",
+                "Running nightly batch SQL queries on an old tape drive",
+                "Sending emails to every computer",
+                "Manual telephone survey"
+              ],
+              "answer": 0,
+              "explanation": "Edge Intelligence queries thousands of endpoints in seconds using distributed edge architecture, delivering real-time visibility into active processes and network connectivity."
+            },
+            {
+              "id": "q3",
+              "question": "How does Digital Employee Experience (DEX) scoring in Ivanti Neurons help IT organizations?",
+              "options": [
+                "It quantifies device boot times, application crashes, and OS performance to proactively address employee friction before complaints occur",
+                "It monitors employee keystrokes for surveillance",
+                "It grades employee lunch breaks",
+                "It rates social media posts"
+              ],
+              "answer": 0,
+              "explanation": "DEX scoring provides visibility into application crashes, latency, and boot times so IT can proactively fix degradation before it harms productivity."
+            }
+          ]
+        }
+      ]
+    },
+    "rugged-devices": {
+      "name": "Rugged & Frontline Devices",
+      "category": "Frontline & Warehouse Logistics",
+      "instructor": "Zebra & Honeywell Certified Mobility Lead",
+      "description": "Hardware configuration, barcode scanning SDKs, DataWedge intent APIs, StageNow XML profiles, shift-worker shared devices, and battery lifecycle.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Zebra, Honeywell & Datalogic Hardware",
+          "duration": "45 mins",
+          "summary": "Rugged form factors, gun-grip ergonomics, drop-spec ratings, physical scanning heads, and cradle architecture.",
+          "details": {
+            "overview": "Rugged frontline mobile computers (Zebra TC5x/MC9300, Honeywell CT60/Dolphin, Datalogic Memor) operate under harsh conditions like sub-zero freezers, hazardous chemical plants, and heavy drop industrial warehouses. This module explores drop specifications (MIL-STD-810H), IP ratings, and cradle architectures.",
+            "topics": [
+              "Form factors: Handheld touch computers vs pistol-grip gun devices vs vehicle-mounted terminals",
+              "Ingress Protection (IP65 vs IP67 vs IP68) and drop ratings (up to 10ft onto concrete)",
+              "Scan engines: 1D linear lasers, 2D imagers, and Extended Range (SE4850) reading up to 70ft",
+              "Multi-slot Ethernet and USB charging cradle infrastructure"
+            ],
+            "lab_guide": [
+              "Step 1: Inspect hardware specifications and temperature operational limits of Zebra MC9300.",
+              "Step 2: Configure scan engine targeting reticle (green dot vs red laser aiming crosshair).",
+              "Step 3: Setup multi-slot cradle network addressing in the warehouse comms room.",
+              "Step 4: Verify battery charging status indicators."
+            ],
+            "commands_configs": "// Hardware Ingress & Spec Summary\nModel: Zebra MC9300\nIngress: IP67 & IP65 per applicable IEC sealing specs\nDrop Spec: 10 ft. (3.1 m) drops to concrete at room temperature per MIL-STD-810G\nTumble: 6,000 3.2 ft. (1 m) tumbles\nOperating Temp: -20°C to 50°C (-4°F to 122°F)",
+            "key_takeaways": [
+              "Extended-range imagers allow forklift operators to scan pallet barcodes from the vehicle without dismounting.",
+              "Cold storage (freezer) models feature heated scan windows to prevent condensation fogging.",
+              "Ethernet cradles provide high-speed automated OS flashing during overnight charging."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What special hardware feature is required on rugged handhelds operating in sub-zero freezer warehouses?",
+              "options": [
+                "Condensation-resistant heated scan windows and low-temperature battery chemistry",
+                "Solar panels on the back cover",
+                "FM radio transmitters",
+                "Cooling fans"
+              ],
+              "answer": 0,
+              "explanation": "Freezer-rated mobile computers incorporate heated scan windows and internal heating elements to prevent rapid condensation and frost when transitioning between cold rooms and warm docks."
+            },
+            {
+              "id": "q2",
+              "question": "Why do enterprise warehouse operations deploy purpose-built rugged mobile computers rather than consumer smartphones?",
+              "options": [
+                "Rugged devices feature drop ratings (MIL-STD-810H), IP67/68 sealing, dedicated physical barcode engines, and long-lifecycle enterprise OS support",
+                "Rugged devices are cheaper plastic toys",
+                "Consumer phones have larger batteries that last 5 days",
+                "Rugged devices do not use electricity"
+              ],
+              "answer": 0,
+              "explanation": "Rugged devices survive repeated drops onto concrete, operate in freezer environments (-30°C), and feature dedicated scan engines capable of reading barcodes from 50 feet away."
+            },
+            {
+              "id": "q3",
+              "question": "Which company develops the DataWedge scanning API framework used across enterprise mobile computers?",
+              "options": [
+                "Zebra Technologies",
+                "Microsoft",
+                "Apple",
+                "Sony"
+              ],
+              "answer": 0,
+              "explanation": "Zebra DataWedge is the enterprise API and service that interfaces with integrated barcode scan engines on Zebra Android devices."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Barcode Scanning & DataWedge APIs",
+          "duration": "50 mins",
+          "summary": "DataWedge profile automation, keystroke output, broadcast intents, symbology configuration (UPC, QR, DataMatrix).",
+          "details": {
+            "overview": "Zebra DataWedge (and Honeywell Enterprise Wedge) intercepts optical barcode scans and translates them into either keystroke emulation or direct Android Broadcast Intents. This allows legacy and modern enterprise apps to receive barcode data without writing custom low-level camera drivers.",
+            "topics": [
+              "DataWedge profiles: Associating specific profiles with target Android app package names",
+              "Keystroke output vs Intent output (best practice for reliability and speed)",
+              "Advanced Data Formatting (ADF): Stripping leading zeroes, appending Tabs or Enter keys",
+              "Symbology management: Enabling Code 128, DataMatrix, PDF417, GS1-128, and disabling unused formats"
+            ],
+            "lab_guide": [
+              "Step 1: On a Zebra device, open the DataWedge application.",
+              "Step 2: Create a new profile named \"WarehouseAppProfile\" and associate it with \"com.uemlabs.inventory\".",
+              "Step 3: Disable Keystroke Output and enable Intent Output with Action: \"com.uemlabs.ACTION_BARCODE\".",
+              "Step 4: In ADF (Advanced Data Formatting), configure a rule to append an Enter key [0x0D] after every scan."
+            ],
+            "commands_configs": "// Android Java/Kotlin BroadcastReceiver for Zebra DataWedge Intent\nprivate val barcodeReceiver = object : BroadcastReceiver() {\n    override fun onReceive(context: Context, intent: Intent) {\n        if (intent.action == \"com.uemlabs.ACTION_BARCODE\") {\n            val barcode = intent.getStringExtra(\"com.symbol.datawedge.data_string\")\n            val symbology = intent.getStringExtra(\"com.symbol.datawedge.label_type\")\n            Log.d(\"SCANNER\", \"Scanned: $barcode ($symbology)\")\n        }\n    }\n}",
+            "key_takeaways": [
+              "Intent output is far superior to Keystroke output because it eliminates cursor focus race conditions.",
+              "Disabling unused barcode symbologies improves scan engine decode speed and battery life.",
+              "Advanced Data Formatting (ADF) can reformat strings before passing them to the business application."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "Why is Intent Output preferred over Keystroke Output in enterprise Android barcode scanning applications?",
+              "options": [
+                "Because Intent Output passes the full scanned string directly to the application via an Android broadcast, regardless of whether a text input cursor is currently focused on screen",
+                "Because Keystroke Output requires an external mechanical typewriter",
+                "Because Intents make the barcode appear in color",
+                "Because Keystroke output only works on Apple iPhones"
+              ],
+              "answer": 0,
+              "explanation": "Intent Output reliably delivers scan data directly into the application logic, preventing lost characters or keystroke misdirection if the user accidentally taps outside an input box."
+            },
+            {
+              "id": "q2",
+              "question": "How does Zebra DataWedge transmit decoded barcode data to an enterprise web application or native Android app without code changes?",
+              "options": [
+                "Keystroke output simulation (injecting decoded characters into the active input cursor)",
+                "By rebooting the device",
+                "By playing a sound through the speaker",
+                "By writing text to the lockscreen wallpaper"
+              ],
+              "answer": 0,
+              "explanation": "DataWedge Keystroke output simulates typing the scanned barcode characters directly into whatever field has cursor focus, allowing legacy web apps to work without SDK integration."
+            },
+            {
+              "id": "q3",
+              "question": "What Android mechanism does DataWedge use to broadcast barcode data asynchronously to native enterprise applications?",
+              "options": [
+                "Android Intent broadcasts (with custom action and extras bundle containing symbology and raw data)",
+                "Bluetooth audio profile",
+                "SMS message",
+                "Wi-Fi Direct packet"
+              ],
+              "answer": 0,
+              "explanation": "Intent output is the high-performance programmatic interface in DataWedge, delivering decoded barcode string and symbology type via Android Intent broadcasts."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: StageNow XML & Barcode Deployment",
+          "duration": "45 mins",
+          "summary": "StageNow Workstation tool, MX architecture, generating 2D barcodes for Wi-Fi, NTP, clock, and MDM agent enrollment.",
+          "details": {
+            "overview": "Zebra StageNow is the standard staging tool for Zebra Android devices. StageNow leverages Zebra Mobility Extensions (MX) to execute low-level configuration steps directly through barcode scans, NFC tags, or audio files.",
+            "topics": [
+              "StageNow profile creation wizard: Wi-Fi, Network Clock, App Installation, MDM Staging",
+              "Generating 2D Aztec, DataMatrix, and PDF417 staging barcodes",
+              "Staging via USB / SD Card / NFC tap",
+              "Exporting XML for zero-touch mass deployment through EMM OEMConfig"
+            ],
+            "lab_guide": [
+              "Step 1: Open Zebra StageNow Workstation and create a new Xpert Mode profile.",
+              "Step 2: Add Wi-Fi configuration (WPA2-Enterprise with root CA certificate).",
+              "Step 3: Add FileMgr module to download the enterprise client APK from internal web server.",
+              "Step 4: Generate 2D barcode and test scan on a factory-reset Zebra device."
+            ],
+            "commands_configs": "// StageNow XML Profile Content Snippet\n<wap-provisioningdoc>\n  <characteristic type=\"Clock\">\n    <parm name=\"AutoTime\" value=\"true\"/>\n    <parm name=\"TimeZone\" value=\"America/Chicago\"/>\n    <parm name=\"NTPServer\" value=\"time.google.com\"/>\n  </characteristic>\n  <characteristic type=\"DevAdmin\">\n    <parm name=\"ScreenLockType\" value=\"None\"/>\n  </characteristic>\n</wap-provisioningdoc>",
+            "key_takeaways": [
+              "2D barcodes can compress large amounts of configuration data into a single scan.",
+              "StageNow works on factory-reset devices straight from the shipping box without network pre-configuration.",
+              "Exported MX XML can be pushed remotely through EMM OEMConfig to update in-field fleets."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What technology allows Zebra Android devices to process configurations encoded inside a StageNow barcode?",
+              "options": [
+                "Zebra Mobility Extensions (MX)",
+                "Windows Registry Editor",
+                "Apple Configurator",
+                "BIOS Bootloader Utility"
+              ],
+              "answer": 0,
+              "explanation": "Zebra Mobility Extensions (MX) is the system-level firmware layer on Zebra Android devices that parses and executes StageNow configuration instructions."
+            },
+            {
+              "id": "q2",
+              "question": "What file format does Zebra StageNow use internally to represent Mobility Extensions (MX) configuration profiles?",
+              "options": [
+                "MX XML configuration documents",
+                "Python scripts",
+                "MP3 audio files",
+                "JPEG images"
+              ],
+              "answer": 0,
+              "explanation": "Zebra MX configuration profiles are XML documents parsed by the on-device MX framework to configure Wi-Fi, scanner parameters, display settings, and app permissions."
+            },
+            {
+              "id": "q3",
+              "question": "What is the benefit of a StageNow 2D PDF417 or QR barcode over manual device setup?",
+              "options": [
+                "A single scan can configure Wi-Fi, download the latest EMM agent, apply security certificates, and enroll the device in under 60 seconds",
+                "Barcodes are colorful decorations",
+                "It plays music",
+                "It increases the screen brightness"
+              ],
+              "answer": 0,
+              "explanation": "A single StageNow barcode triggers automated staging, reducing manual device onboarding time from 30 minutes to under 1 minute."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: Shift-Worker Shared Device Check-In",
+          "duration": "40 mins",
+          "summary": "Shared device check-in/check-out architectures, badge NFC tap auth, user session wiping, and multi-user profiles.",
+          "details": {
+            "overview": "In 24/7 logistics and healthcare environments, devices are shared across multiple consecutive work shifts. Check-in/Check-out (CICO) architectures allow shift workers to tap their employee badge, receive a customized device profile with their credentials, and return the device to the charging rack at shift end for automated cache wiping.",
+            "topics": [
+              "Shared Device Architecture: Check-In / Check-Out (CICO)",
+              "NFC badge tap authentication and SSO token injection",
+              "Automated post-shift sanitization: Clearing browser cookies, app cache, and temporary scan files",
+              "Tracking device custodianship to eliminate misplaced or lost warehouse hardware"
+            ],
+            "lab_guide": [
+              "Step 1: Configure a Shared Device profile in the EMM console.",
+              "Step 2: Set the initial screen to a locked login prompt with NFC badge listener.",
+              "Step 3: Simulate shift worker badge tap and verify personalized profile application.",
+              "Step 4: Check in the device and confirm that the previous user session data is completely scrubbed."
+            ],
+            "commands_configs": "// Android Shared Device Session Scrubbing Intent\n$ am broadcast -a com.uemlabs.action.SESSION_LOGOUT --es \"reason\" \"SHIFT_ENDED\"\n// Clears application private directory\n$ pm clear com.uemlabs.warehouse.app",
+            "key_takeaways": [
+              "Session scrubbing guarantees shift workers cannot see medical or financial data processed by the prior worker.",
+              "CICO tracking pinpoints the exact employee who last possessed a damaged or missing scanner.",
+              "Single sign-on tokens should have auto-expiration limits matching shift durations."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the primary reason for running automated cache wiping when a shift worker returns a shared device?",
+              "options": [
+                "To purge confidential customer or patient data and clear personal session tokens before the next employee logs in",
+                "To delete the camera lens software",
+                "To speed up the internet download of videos",
+                "To discharge the battery to 0%"
+              ],
+              "answer": 0,
+              "explanation": "Automated cache wiping on shared devices protects security and privacy by ensuring the subsequent worker starts with a clean application state without leftover session data."
+            },
+            {
+              "id": "q2",
+              "question": "In a 24/7 retail or logistics shift-worker environment, what is the best practice for shared device check-in/check-out?",
+              "options": [
+                "Using NFC badge tap or barcode badge scan to authenticate the worker, assign user profiles, and automatically wipe temporary cached data upon shift end",
+                "Letting all workers share the same root password and personal photos",
+                "Never cleaning device data between shifts",
+                "Storing passwords on sticky notes"
+              ],
+              "answer": 0,
+              "explanation": "Enterprise shared device check-in (like Zebra Identity Guardian or Workspace ONE Launcher) wipes session data upon logout and re-provisions for the next shift worker."
+            },
+            {
+              "id": "q3",
+              "question": "Which protocol or feature prevents previous worker data (PII, customer signatures) from lingering on a shared device?",
+              "options": [
+                "Automated session logout and app cache wiping / multi-user container reset",
+                "Screen brightness timeout",
+                "Bluetooth discovery",
+                "Airplane mode"
+              ],
+              "answer": 0,
+              "explanation": "Shared device management frameworks automatically wipe app data caches, browser cookies, and temporary photos when a worker checks out at shift conclusion."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Battery Health & Fleet Lifecycle",
+          "duration": "35 mins",
+          "summary": "Smart battery telemetry, cycle count degradation alerts, hot-swap battery workflows, and spare pool staging.",
+          "details": {
+            "overview": "Battery failure during an active retail or logistics shift halts operations. Smart rugged batteries incorporate internal microcontrollers that report live cycle counts, battery health percentage, temperature history, and estimated capacity degradation to the EMM platform.",
+            "topics": [
+              "Smart battery telemetry: Cycle count, State of Health (SOH), impedance, and temperature history",
+              "Hot-swap battery workflows: Swapping batteries within 60 seconds without rebooting the OS",
+              "Automated replacement threshold alerts (e.g. SOH < 80% triggers procurement dispatch)",
+              "Spare pool staging and charging cradle cycle rotation best practices"
+            ],
+            "lab_guide": [
+              "Step 1: Query Zebra smart battery parameters using terminal or OEMConfig sensor.",
+              "Step 2: Identify batteries with cycle counts exceeding 500 full charge cycles.",
+              "Step 3: Test a hot-swap battery procedure: verify the screen stays alive in low-power standby during swap.",
+              "Step 4: Build a dashboard report classifying fleet batteries into Healthy, Degraded, and Replace."
+            ],
+            "commands_configs": "// Querying Zebra Smart Battery Telemetry\n$ adb shell dumpsys battery\n$ adb shell cat /sys/class/power_supply/battery/cycle_count\n$ adb shell cat /sys/class/power_supply/battery/health_percentage",
+            "key_takeaways": [
+              "Lithium-ion batteries typically lose 20% of capacity after 500 full charge cycles.",
+              "Hot-swap capabilities save minutes per worker by avoiding long Android cold boot sequences.",
+              "Proactive battery replacement prevents sudden mid-shift scanner shutdowns."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What does a \"Hot-Swap\" battery feature allow a warehouse worker to do?",
+              "options": [
+                "Swap a depleted battery with a fresh one without powering down the device or losing their active application state",
+                "Heat up the battery on cold winter mornings",
+                "Charge the battery using sunlight",
+                "Transfer battery power into their smartphone"
+              ],
+              "answer": 0,
+              "explanation": "Hot-swap utilizes an internal supercapacitor or backup battery that maintains RAM and CPU power for 60–90 seconds while the main battery is replaced, avoiding reboots."
+            },
+            {
+              "id": "q2",
+              "question": "What battery telemetry metric is critical for identifying aging lithium-ion batteries before they fail on the warehouse floor?",
+              "options": [
+                "Battery Cycle Count and State of Health (SOH) percentage",
+                "The color of the plastic case",
+                "The brand of the charger cable",
+                "The room temperature"
+              ],
+              "answer": 0,
+              "explanation": "State of Health (SOH) and cycle count track battery degradation; when SOH falls below 80%, batteries struggle to sustain full shifts and should be cycled out."
+            },
+            {
+              "id": "q3",
+              "question": "What feature on enterprise rugged scanners allows workers to swap an exhausted battery without rebooting the OS or losing session data?",
+              "options": [
+                "Hot-Swap / Warm-Swap battery backup capacitor",
+                "Wireless charging pad only",
+                "Solar panel",
+                "Turning the screen off"
+              ],
+              "answer": 0,
+              "explanation": "Hot-swap technology uses a supercapacitor or backup battery that maintains RAM and CPU state for 60-120 seconds while the worker swaps in a freshly charged battery."
+            }
+          ]
+        }
+      ]
+    },
+    "intune-essentials": {
+      "name": "Intune & Endpoint Security",
+      "category": "Cloud Endpoint Security",
+      "instructor": "Microsoft MVP - Security & Endpoint",
+      "description": "Microsoft Intune architecture, Conditional Access compliance, Windows Autopilot zero-touch deployment, Defender for Endpoint, and Attack Surface Reduction.",
+      "lessons": [
+        {
+          "id": "module-1",
+          "name": "Module 1: Endpoint Architecture & Cloud Enrollment",
+          "duration": "45 mins",
+          "summary": "Microsoft Entra ID join vs hybrid join, Intune service architecture, MDM auto-enrollment scopes, and licensing.",
+          "details": {
+            "overview": "Microsoft Intune is the cloud-native endpoint management component of Microsoft Endpoint Manager. Built natively on Microsoft Entra ID (formerly Azure Active Directory), Intune governs Windows, macOS, iOS, Android, and Linux devices from a unified cloud console.",
+            "topics": [
+              "Microsoft Entra ID Join vs Hybrid Entra ID Join vs Entra Registered",
+              "Configuring automatic MDM enrollment scopes in the Entra admin portal",
+              "Intune licensing prerequisites (Microsoft 365 E3/E5, Business Premium, Intune Suite)",
+              "Tenant status, cloud service health, and connector configurations"
+            ],
+            "lab_guide": [
+              "Step 1: Open the Microsoft Entra admin center and navigate to Mobility (MDM and MAM).",
+              "Step 2: Configure Microsoft Intune MDM User Scope to \"All\".",
+              "Step 3: Staged enroll a Windows 11 endpoint using an enterprise work account.",
+              "Step 4: Verify in the Intune portal that the device registers as \"Microsoft Entra joined\" and \"Managed by Intune\"."
+            ],
+            "commands_configs": "// Windows Command Line Enrollment Check\n$ dsregcmd /status\n\n+----------------------------------------------------------------------+\n| Device State                                                         |\n+----------------------------------------------------------------------+\n             AzureAdJoined : YES\n          EnterpriseJoined : NO\n              DomainJoined : NO\n               Device Name : W11-FINANCE-092",
+            "key_takeaways": [
+              "Microsoft Entra ID Join is recommended for all new cloud-first PC deployments.",
+              "Hybrid Entra Join should only be maintained if on-premises legacy Kerberos/Active Directory dependencies exist.",
+              "Automatic enrollment links Entra identity join directly to Intune MDM provisioning."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What command-line tool verifies Microsoft Entra join and MDM enrollment status on a Windows endpoint?",
+              "options": [
+                "dsregcmd /status",
+                "ipconfig /all",
+                "netstat -ano",
+                "format c:"
+              ],
+              "answer": 0,
+              "explanation": "`dsregcmd /status` outputs the comprehensive identity state, showing whether AzureAdJoined is YES and whether Intune tenant MDM URLs are bound."
+            },
+            {
+              "id": "q2",
+              "question": "What is the modern cloud identity provider required for Microsoft Intune device enrollment and conditional access?",
+              "options": [
+                "Microsoft Entra ID (formerly Azure Active Directory)",
+                "Windows Server 2000 domain",
+                "Yahoo Mail directory",
+                "Local workgroup file"
+              ],
+              "answer": 0,
+              "explanation": "Microsoft Intune is natively integrated with Microsoft Entra ID to authenticate users, issue PRTs (Primary Refresh Tokens), and enforce device compliance."
+            },
+            {
+              "id": "q3",
+              "question": "Which Windows enrollment option connects a remote worker's personal PC to corporate apps while maintaining privacy?",
+              "options": [
+                "Microsoft Intune MAM (Mobile Application Management) without enrollment",
+                "Full hard-drive wipe",
+                "Domain join to local physical cable",
+                "Formatting BIOS"
+              ],
+              "answer": 0,
+              "explanation": "MAM without enrollment (MAM-WE) protects corporate data inside approved apps (Word, Teams, Outlook) without requiring full device management of the personal PC."
+            }
+          ]
+        },
+        {
+          "id": "module-2",
+          "name": "Module 2: Conditional Access & Compliance Policies",
+          "duration": "50 mins",
+          "summary": "Zero Trust enforcement, device compliance policies, device risk levels, and Conditional Access grant controls.",
+          "details": {
+            "overview": "Conditional Access is the Zero Trust policy engine of the Microsoft cloud. It evaluates signals (user identity, location, device compliance status, and Microsoft Defender risk level) and enforces decision controls (Allow, Require MFA, Require Compliant Device, or Block).",
+            "topics": [
+              "Zero Trust principle: \"Never trust, always verify, assume breach\"",
+              "Intune Compliance Policy rules: Minimum OS, BitLocker, Firewall, Antivirus, Secure Boot",
+              "Configuring Conditional Access Grant Controls: \"Require device to be marked as compliant\"",
+              "Evaluating What-If scenarios in the Conditional Access troubleshooter"
+            ],
+            "lab_guide": [
+              "Step 1: Create an Intune Compliance Policy for Windows: Require BitLocker and Antivirus enabled.",
+              "Step 2: In Microsoft Entra Conditional Access, create a policy targeting \"Office 365\" cloud apps.",
+              "Step 3: Grant control: Select \"Require device to be marked as compliant\".",
+              "Step 4: Attempt to sign into Outlook from an unmanaged personal PC and confirm access is blocked."
+            ],
+            "commands_configs": "// Conditional Access Policy Evaluation JSON\n{\n  \"displayName\": \"Block Unmanaged Access to M365\",\n  \"conditions\": {\n    \"users\": { \"include\": [\"All\"] },\n    \"applications\": { \"include\": [\"Office365\"] }\n  },\n  \"grantControls\": {\n    \"operator\": \"OR\",\n    \"builtInControls\": [\"compliantDevice\"]\n  }\n}",
+            "key_takeaways": [
+              "Conditional Access prevents attackers with stolen passwords from accessing cloud data on unmanaged machines.",
+              "Compliance state is calculated continuously by the Intune management extension agent.",
+              "Defender for Endpoint feeds real-time machine risk scores directly into compliance evaluation."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the role of Conditional Access in a Microsoft Zero Trust security architecture?",
+              "options": [
+                "It evaluates real-time signals (user, device compliance, risk) and enforces access decisions before granting access to corporate cloud resources",
+                "It installs graphic card drivers",
+                "It sends monthly paper bills to employees",
+                "It monitors coffee machine usage"
+              ],
+              "answer": 0,
+              "explanation": "Conditional Access acts as the gatekeeper, verifying that the user and endpoint meet security baselines (such as being an Intune-compliant device) before granting entry to cloud apps."
+            },
+            {
+              "id": "q2",
+              "question": "How do Microsoft Entra Conditional Access and Intune Compliance work together to protect cloud data?",
+              "options": [
+                "Conditional Access checks the Intune compliance flag (e.g. BitLocker encrypted, antivirus active); if non-compliant, access to Microsoft 365 is blocked",
+                "They do not work together",
+                "Intune deletes Microsoft 365 accounts",
+                "Conditional access disables Wi-Fi"
+              ],
+              "answer": 0,
+              "explanation": "Conditional Access policies require \"Require device to be marked as compliant\", ensuring endpoints meet Intune health standards before accessing cloud apps."
+            },
+            {
+              "id": "q3",
+              "question": "What happens when an Intune compliance policy grace period expires on an endpoint with outdated antivirus signatures?",
+              "options": [
+                "The device is marked Non-Compliant and Entra ID Conditional Access blocks corporate access until remediated",
+                "The laptop explodes",
+                "The user is promoted",
+                "The operating system is upgraded to Linux"
+              ],
+              "answer": 0,
+              "explanation": "Once the grace period expires, the device is flagged as non-compliant, triggering Conditional Access blocks to protect enterprise resources."
+            }
+          ]
+        },
+        {
+          "id": "module-3",
+          "name": "Module 3: Windows Autopilot & Hardware Hashes",
+          "duration": "55 mins",
+          "summary": "Extract hardware hashes, OEM device registration, user-driven deployment profiles, and Enrollment Status Page (ESP).",
+          "details": {
+            "overview": "Windows Autopilot transforms PC staging from hours of manual IT imaging to a zero-touch cloud experience. When a new laptop is turned on by an employee at home, Autopilot detects its hardware hash, binds it to the corporate tenant, joins Entra ID, installs enterprise apps, and configures BitLocker automatically.",
+            "topics": [
+              "Extracting hardware hashes via PowerShell script (Get-WindowsAutopilotInfo)",
+              "OEM partner registration (Dell, Lenovo, HP shipping directly to end-users)",
+              "Autopilot Deployment Profiles: User-Driven vs Self-Deploying (Kiosk)",
+              "Enrollment Status Page (ESP) configuration to block desktop access until critical apps install"
+            ],
+            "lab_guide": [
+              "Step 1: On a test physical or virtual machine, extract the 4K hardware hash CSV.",
+              "Step 2: Upload the CSV into Microsoft Intune > Devices > Windows enrollment > Devices.",
+              "Step 3: Assign an Autopilot Profile with \"User-Driven\" mode and standard user account type.",
+              "Step 4: Boot the VM to out-of-box experience (OOBE) and observe the branded corporate login."
+            ],
+            "commands_configs": "// PowerShell Command to Extract Autopilot Hardware Hash\nSet-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force\nInstall-Script -Name Get-WindowsAutopilotInfo -Force\nGet-WindowsAutopilotInfo.ps1 -OutputFile C:\\AutopilotHardwareHash.csv -Online",
+            "key_takeaways": [
+              "Autopilot eliminates the need to build and maintain monolithic Golden Windows OS images.",
+              "OEMs can register hardware hashes at the factory before shipping the PC to the employee.",
+              "Enrollment Status Page prevents users from working on a half-configured, unencrypted machine."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What script extracts the hardware hash required to register a Windows computer with Windows Autopilot?",
+              "options": [
+                "Get-WindowsAutopilotInfo.ps1",
+                "Delete-SystemFiles.exe",
+                "WindowsUpdate.bat",
+                "Start-Word.ps1"
+              ],
+              "answer": 0,
+              "explanation": "`Get-WindowsAutopilotInfo.ps1` gathers the hardware hash, serial number, and UUID necessary to register the device in the Microsoft Autopilot cloud."
+            },
+            {
+              "id": "q2",
+              "question": "What unique identifier is extracted from a Windows computer and uploaded to Microsoft Intune for Windows Autopilot registration?",
+              "options": [
+                "Hardware Hash (4K cryptographic hardware identifier generated from motherboard and TPM components)",
+                "Laptop keyboard color",
+                "Wi-Fi password",
+                "Power adapter serial number"
+              ],
+              "answer": 0,
+              "explanation": "The Windows Hardware Hash contains a cryptographic signature of the device's hardware components, uniquely binding the physical machine to the enterprise tenant."
+            },
+            {
+              "id": "q3",
+              "question": "During Windows Autopilot self-deploying mode for digital kiosks, which component provides hardware-backed tenant authentication without user interaction?",
+              "options": [
+                "Trusted Platform Module (TPM 2.0) device attestation",
+                "Employee fingerprint",
+                "USB security dongle",
+                "Paper certificate"
+              ],
+              "answer": 0,
+              "explanation": "Autopilot self-deploying mode uses TPM 2.0 cryptographic attestation to verify the device's physical identity and bind it to the corporate tenant without requiring user credentials."
+            }
+          ]
+        },
+        {
+          "id": "module-4",
+          "name": "Module 4: Microsoft Defender for Endpoint",
+          "duration": "45 mins",
+          "summary": "Defender onboarding scripts, automated investigation & response (AIR), live response sessions, and security baseline deployment.",
+          "details": {
+            "overview": "Microsoft Defender for Endpoint (MDE) is an enterprise endpoint detection and response (EDR) platform. Integrated directly into the Windows OS kernel and Intune, MDE provides real-time behavioral protection, cloud threat intelligence, and automated investigation and remediation (AIR).",
+            "topics": [
+              "Onboarding endpoints to Defender for Endpoint via Intune Endpoint Detection and Response (EDR) policy",
+              "Automated Investigation & Response (AIR) playbooks for automated malware eradication",
+              "Live Response sessions: Opening a secure remote terminal into compromised machines",
+              "Deploying Microsoft Intune Security Baselines for Windows, Edge, and Office"
+            ],
+            "lab_guide": [
+              "Step 1: In the Microsoft Defender portal, establish the Intune service-to-service connection.",
+              "Step 2: In Intune, create an Endpoint Detection and Response profile and assign it to \"All Corporate Laptops\".",
+              "Step 3: On a test endpoint, run the simulated attack test script provided by Microsoft.",
+              "Step 4: Review the alert timeline, process injection tree, and automated quarantine in the Defender portal."
+            ],
+            "commands_configs": "// Simulated Defender EDR Detection Test Script\n$ powershell.exe -NoExit -Command \"Write-Host 'Testing Defender EDR Detection'; Invoke-WebRequest -Uri 'http://example.com/test_malware' -UseBasicParsing\"",
+            "key_takeaways": [
+              "Defender for Endpoint is built into the Windows OS; no separate third-party sensor agent is required.",
+              "AIR automates tedious forensic analysis, terminating malicious trees and purging bad registry keys.",
+              "Security Baselines apply hundreds of vetted CIS/Microsoft security settings in one click."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What is the primary advantage of Microsoft Defender for Endpoint on Windows 11 compared to legacy third-party antivirus agents?",
+              "options": [
+                "It is built natively into the Windows kernel, requiring no heavy external agent software installation",
+                "It turns off the internet automatically",
+                "It changes screen resolution to 4K",
+                "It only works when the computer is shut down"
+              ],
+              "answer": 0,
+              "explanation": "Defender for Endpoint is natively embedded within the Windows operating system kernel, delivering superior performance, tamper resistance, and zero third-party agent overhead."
+            },
+            {
+              "id": "q2",
+              "question": "How does Microsoft Defender for Endpoint (MDE) integrate with Microsoft Intune to automate threat response?",
+              "options": [
+                "MDE shares device risk level (Low, Medium, High) with Intune compliance rules; high-risk infected devices are quarantined automatically",
+                "MDE formats the C: drive on detection",
+                "MDE sends paper mail to the user",
+                "MDE disables the monitor"
+              ],
+              "answer": 0,
+              "explanation": "Intune integrates with Defender for Endpoint to evaluate Machine Risk Score, automatically revoking access when active malware or credential theft is detected."
+            },
+            {
+              "id": "q3",
+              "question": "Which feature in Microsoft Defender prevents malicious macros and executable code from launching from Microsoft Office applications?",
+              "options": [
+                "Attack Surface Reduction (ASR) rules",
+                "Windows Media Player",
+                "Paint 3D",
+                "Task Manager"
+              ],
+              "answer": 0,
+              "explanation": "Attack Surface Reduction (ASR) rules block typical malware behaviors such as obfuscated scripts, Office child processes, and credential stealing from LSASS."
+            }
+          ]
+        },
+        {
+          "id": "module-5",
+          "name": "Module 5: Attack Surface Reduction & LAPS",
+          "duration": "40 mins",
+          "summary": "ASR rules for Office and script obfuscation, Windows Local Admin Password Solution (LAPS) cloud backup, and BitLocker key escrow.",
+          "details": {
+            "overview": "Attack Surface Reduction (ASR) rules prevent common malware techniques, such as Office applications launching child processes, obfuscated macro scripts, and credential theft from LSASS. Windows LAPS automatically rotates unique local administrator passwords and escrows them securely in Microsoft Entra ID.",
+            "topics": [
+              "Configuring high-impact ASR rules: \"Block executable content from email client and webmail\"",
+              "Blocking Office applications from creating executable content or child processes",
+              "LSASS credential dumping prevention via ASR rule [9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2]",
+              "Windows Local Administrator Password Solution (LAPS) in Microsoft Entra ID"
+            ],
+            "lab_guide": [
+              "Step 1: Create an Endpoint Security > Attack Surface Reduction policy in Intune.",
+              "Step 2: Set \"Block credential stealing from the Windows local security authority subsystem (lsass.exe)\" to Block.",
+              "Step 3: Configure Windows LAPS policy: Rotate local admin password every 30 days with 16-character complex string.",
+              "Step 4: Verify that the local admin password can be retrieved from the device blade in the Entra portal."
+            ],
+            "commands_configs": "// Querying LAPS Status in PowerShell\n$ Get-LapsDiagnostics\n// Verifying ASR Rules State\n$ Get-MpPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids",
+            "key_takeaways": [
+              "ASR rules stop zero-day ransomware before it executes by blocking dangerous behavior patterns.",
+              "Windows LAPS eliminates shared local admin passwords across your workstation fleet.",
+              "Always test ASR rules in \"Audit Mode\" first to verify internal legacy line-of-business macros."
+            ]
+          },
+          "quiz": [
+            {
+              "id": "q1",
+              "question": "What security problem does Windows LAPS (Local Administrator Password Solution) solve?",
+              "options": [
+                "It prevents lateral movement attacks by automatically generating unique, randomized local administrator passwords for every machine and escrowing them in the cloud",
+                "It sets the same simple password \"admin123\" on all corporate laptops",
+                "It deletes the administrator account completely",
+                "It bypasses Windows BitLocker encryption"
+              ],
+              "answer": 0,
+              "explanation": "LAPS ensures every computer has a unique, strong, frequently rotated local administrator password, preventing attackers who compromise one machine from using the same password on other endpoints."
+            },
+            {
+              "id": "q2",
+              "question": "What is the primary purpose of Windows LAPS (Local Administrator Password Solution) managed via Microsoft Intune?",
+              "options": [
+                "Automatically rotating unique, complex passwords for the local administrator account on each device and storing them securely in Entra ID / Intune",
+                "Setting the password \"admin123\" on all computers",
+                "Deleting administrator rights from all computers forever",
+                "Printing passwords on labels"
+              ],
+              "answer": 0,
+              "explanation": "Windows LAPS eliminates shared local administrator passwords, automatically rotating unique passwords on each machine to prevent lateral movement attacks."
+            },
+            {
+              "id": "q3",
+              "question": "Which encryption technology does Microsoft Intune enforce on Windows endpoints to protect corporate data at rest?",
+              "options": [
+                "BitLocker Drive Encryption with TPM key protection",
+                "ZIP file passwords",
+                "ROT13 cipher",
+                "Screen saver locks"
+              ],
+              "answer": 0,
+              "explanation": "Intune configures BitLocker drive encryption policies, automatically escrowing 48-digit recovery keys into Microsoft Entra ID for secure recovery."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "authTokens": {
+    "951933d32cdc80e8611048d6c3500e9a44b2420d4db43f250b129fbdb997d816": {
+      "token": "951933d32cdc80e8611048d6c3500e9a44b2420d4db43f250b129fbdb997d816",
+      "user": {
+        "id": 1,
+        "name": "Candidate User",
+        "email": "candidate@uemlabs.com",
+        "role": "candidate"
+      },
+      "role": "candidate",
+      "createdAt": 1790312013476,
+      "expiresAt": 1791521613476
+    },
+    "14b7e98c1bfac7b746370b0111e14a742d3edb92784f7c2716070b39d1a28fe2": {
+      "token": "14b7e98c1bfac7b746370b0111e14a742d3edb92784f7c2716070b39d1a28fe2",
+      "user": {
+        "id": 2,
+        "name": "Tutor User",
+        "email": "tutor@uemlabs.com",
+        "role": "tutor"
+      },
+      "role": "tutor",
+      "createdAt": 1790312023059,
+      "expiresAt": 1791521623059
+    },
+    "36515bde89501779d19ef2d2e6a2ec03caa98e9ba2a58b1e42732f8b2048c4b7": {
+      "token": "36515bde89501779d19ef2d2e6a2ec03caa98e9ba2a58b1e42732f8b2048c4b7",
+      "user": {
+        "id": 2,
+        "name": "Tutor User",
+        "email": "tutor@uemlabs.com",
+        "role": "tutor"
+      },
+      "role": "tutor",
+      "createdAt": 1790312026632,
+      "expiresAt": 1791521626632
+    },
+    "a06c2431f71c44da2d7cd46e08015ec14cf8ccb5a2c714484ee1f8dfd4f685e2": {
+      "token": "a06c2431f71c44da2d7cd46e08015ec14cf8ccb5a2c714484ee1f8dfd4f685e2",
+      "user": {
+        "id": 1,
+        "name": "Candidate User",
+        "email": "candidate@uemlabs.com",
+        "role": "candidate"
+      },
+      "role": "candidate",
+      "createdAt": 1790312030246,
+      "expiresAt": 1791521630246
+    },
+    "cb1f2c59fab341f5e599f627d31e0f99b8a1ce98b8e4b958aed6b0c3abc3057b": {
+      "token": "cb1f2c59fab341f5e599f627d31e0f99b8a1ce98b8e4b958aed6b0c3abc3057b",
+      "user": {
+        "id": 2,
+        "name": "Tutor User",
+        "email": "tutor@uemlabs.com",
+        "role": "tutor"
+      },
+      "role": "tutor",
+      "createdAt": 1790312314021,
+      "expiresAt": 1791521914021
+    },
+    "7b7a11c4c184d80e147c8936ea26c3b8b2f3ab2fd59cb8ca6918b8a812824e54": {
+      "token": "7b7a11c4c184d80e147c8936ea26c3b8b2f3ab2fd59cb8ca6918b8a812824e54",
+      "user": {
+        "id": 2,
+        "name": "Tutor User",
+        "email": "tutor@uemlabs.com",
+        "role": "tutor"
+      },
+      "role": "tutor",
+      "createdAt": 1790312465990,
+      "expiresAt": 1791522065990
+    },
+    "aa06e792aa351c20556c73855acd4a312c825f2a4761731998dcdc96457d07ad": {
+      "token": "aa06e792aa351c20556c73855acd4a312c825f2a4761731998dcdc96457d07ad",
+      "user": {
+        "id": 2,
+        "name": "Tutor User",
+        "email": "tutor@uemlabs.com",
+        "role": "tutor"
+      },
+      "role": "tutor",
+      "createdAt": 1790348927770,
+      "expiresAt": 1791558527770
+    }
+  }
+}

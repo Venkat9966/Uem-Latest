@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course & Lessons | UEM Labs Academy</title>
+  <meta name="description" content="Interactive enterprise endpoint management course with modules, lab manuals, and tutor resources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Space+Grotesk:wght@500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="dash-header">
+    <a href="dashboard.html" class="brand">
+      <img src="uem-logo.svg" alt="UEM Labs" class="brand-logo-img">
+      <span>UEM <b style="background:#eaf2e3;color:#14231f;border:1px solid #c7d8bf;border-radius:4px;padding:2px 6px;font-size:9px">ACADEMY</b></span>
+    </a>
+    <nav>
+      <a href="dashboard.html">← Back to Dashboard</a>
+      <a href="tutor-dashboard.html" id="tutor-dash-nav-link" style="display:none;font-weight:700;color:#234a17;background:#e5f3d4;padding:4px 10px;border-radius:6px;border:1px solid #b8dab0;">👨‍🏫 Tutor Studio</a>
+      <a href="index.html#courses">All Tracks</a>
+      <button class="avatar" id="account-button" title="Candidate profile">C</button>
+      <button class="logout-button" id="logout-button">Log out</button>
+    </nav>
+  </header>
+
+  <main class="course-shell">
+    <!-- Breadcrumb & Tutor Mode Control -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+      <nav class="course-breadcrumb" aria-label="Breadcrumb" style="margin-bottom:0;">
+        <a href="dashboard.html">Dashboard</a>
+        <span>/</span>
+        <a href="dashboard.html#courses">Courses</a>
+        <span>/</span>
+        <span id="breadcrumb-course-name" style="color:#14231f;">Loading course...</span>
+      </nav>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="tutor-mode-status-tag" style="font-size:12px;font-weight:700;color:#274d15;background:#e5f3d4;padding:3px 9px;border-radius:4px;border:1px solid #bedbb5;display:none;">👨‍🏫 Tutor Controls Active</span>
+        <button type="button" class="btn-tutor-mode-toggle" id="btn-toggle-tutor-mode" title="Toggle between Tutor Editing View and Candidate Sequential View">
+          <span id="tutor-toggle-label">👨‍🏫 Tutor View: ON</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Category-Specific Track Filter Bar with Icons and "+ Add" Symbol After Each One -->
+    <div class="tutor-track-filter-container course-page-filters" id="course-track-filter-container">
+      <div class="tutor-track-filter-header">
+        <span class="tutor-track-filter-label">
+          <span>Enterprise Tracks</span> <span>• Click track to switch or click <b>+</b> after each one to add a module</span>
+        </span>
+        <span class="tutor-track-filter-hint">Curriculum & Lessons Filter Bar</span>
+      </div>
+      <div class="course-filters tutor-filters" role="tablist" aria-label="Course Tracks with Add Buttons">
+        <!-- All Tracks -->
+        <button type="button" class="course-filter-btn" data-tutor-track="all" title="View all curriculum modules in Tutor Studio">
+          <span class="filter-btn-icon filter-icon-all" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </span>
+          <span class="filter-btn-label">All Tracks</span>
+          <span class="filter-btn-add" data-add-track="all" title="Add module to curriculum" aria-label="Add module">+</span>
+        </button>
+
+        <!-- Android Enterprise -->
+        <button type="button" class="course-filter-btn" data-tutor-track="android-enterprise" title="Filter to Android Enterprise Foundations">
+          <span class="filter-btn-icon filter-icon-android" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.52 15.34c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-11.04 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m11.4-6.02l2-3.46a.42.42 0 00-.15-.57.42.42 0 00-.57.15l-2.02 3.5a10.8 10.8 0 00-10.28 0L4.84 5.44a.42.42 0 00-.57-.15.42.42 0 00-.15.57l2 3.46C2.69 11.19.34 14.66 0 18.76h24c-.34-4.1-2.69-7.57-6.12-9.44z"></path>
+            </svg>
+          </span>
+          <span class="filter-btn-label">Android Enterprise</span>
+          <span class="filter-btn-add" data-add-track="android-enterprise" title="Add module to Android Enterprise" aria-label="Add module to Android Enterprise">+</span>
+        </button>
+
+        <!-- Workspace ONE -->
+        <button type="button" class="course-filter-btn" data-tutor-track="workspace-one" title="Filter to Workspace ONE Essentials">
+          <span class="filter-btn-icon filter-icon-workspaceone" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </span>
+          <span class="filter-btn-label">Workspace ONE</span>
+          <span class="filter-btn-add" data-add-track="workspace-one" title="Add module to Workspace ONE" aria-label="Add module to Workspace ONE">+</span>
+        </button>
+
+        <!-- SOTI MobiControl -->
+        <button type="button" class="course-filter-btn" data-tutor-track="soti-mobicontrol" title="Filter to SOTI MobiControl Mastery">
+          <span class="filter-btn-icon filter-icon-soti" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"></polygon>
+              <circle cx="12" cy="12" r="2.5" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span class="filter-btn-label">SOTI</span>
+          <span class="filter-btn-add" data-add-track="soti-mobicontrol" title="Add module to SOTI MobiControl" aria-label="Add module to SOTI MobiControl">+</span>
+        </button>
+
+        <!-- Ivanti Neurons -->
+        <button type="button" class="course-filter-btn" data-tutor-track="ivanti-neurons" title="Filter to Ivanti Neurons for UEM">
+          <span class="filter-btn-icon filter-icon-ivanti" aria-hidden="true">
+            <circle cx="12" cy="4" r="2.5" fill="currentColor"></circle>
+            <circle cx="5" cy="18" r="2.5" fill="currentColor"></circle>
+            <circle cx="19" cy="18" r="2.5" fill="currentColor"></circle>
+            <circle cx="12" cy="12.5" r="1.5"></circle>
+            <line x1="12" y1="6.5" x2="12" y2="11"></line>
+            <line x1="10.8" y1="13.7" x2="6.8" y2="16.5"></line>
+            <line x1="13.2" y1="13.7" x2="17.2" y2="16.5"></line>
+          </svg>
+          </span>
+          <span class="filter-btn-label">Ivanti</span>
+          <span class="filter-btn-add" data-add-track="ivanti-neurons" title="Add module to Ivanti Neurons" aria-label="Add module to Ivanti Neurons">+</span>
+        </button>
+
+        <!-- Rugged Devices -->
+        <button type="button" class="course-filter-btn" data-tutor-track="rugged-devices" title="Filter to Rugged & Frontline Devices">
+          <span class="filter-btn-icon filter-icon-rugged" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2" width="12" height="20" rx="2.5"></rect>
+              <line x1="9" y1="6" x2="15" y2="6"></line>
+              <line x1="9" y1="10" x2="9" y2="14"></line>
+              <line x1="12" y1="10" x2="12" y2="14"></line>
+              <line x1="15" y1="10" x2="15" y2="14"></line>
+              <path d="M2 9h2M20 9h2"></path>
+              <circle cx="12" cy="18" r="1" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span class="filter-btn-label">Rugged Devices</span>
+          <span class="filter-btn-add" data-add-track="rugged-devices" title="Add module to Rugged Devices" aria-label="Add module to Rugged Devices">+</span>
+        </button>
+
+        <!-- Intune -->
+        <button type="button" class="course-filter-btn" data-tutor-track="intune-essentials" title="Filter to Intune & Endpoint Security">
+          <span class="filter-btn-icon filter-icon-intune" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11.5 14.5 15.5 9.5"></polyline>
+            </svg>
+          </span>
+          <span class="filter-btn-label">Intune</span>
+          <span class="filter-btn-add" data-add-track="intune-essentials" title="Add module to Intune" aria-label="Add module to Intune">+</span>
+        </button>
+
+        <!-- Dedicated Primary Add Track Button -->
+        <button type="button" class="btn-tutor-add-track-primary" id="btn-course-add-track-direct" title="Add Supplemental Module to Current Track">
+          <span class="add-sym">+</span>
+          <span>Add Module</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Course Hero Banner -->
+    <section class="course-hero-banner" id="course-hero-banner">
+      <div class="course-hero-main">
+        <span class="course-track-pill" id="course-track-pill">Enterprise Track</span>
+        <h1 class="course-hero-title" id="course-title">Loading Course...</h1>
+        <p class="course-hero-desc" id="course-desc">Please wait while the curriculum and uploaded lesson resources are retrieved.</p>
+        <div class="course-hero-meta">
+          <span>👨‍🏫 <strong id="course-instructor">Certified Instructor</strong></span>
+          <span>⏱️ <span id="course-duration">6 Modules · Hands-on Labs</span></span>
+          <span>📁 <span id="course-materials-total">0 Uploaded Materials</span></span>
+        </div>
+      </div>
+      <div class="course-hero-progress">
+        <div class="progress-card-title">
+          <strong>Course Progress</strong>
+          <span id="progress-percentage-pill">0% Complete</span>
+        </div>
+        <div class="progress-bar-large">
+          <i id="progress-bar-fill" style="width:0%"></i>
+        </div>
+        <div class="progress-card-stats">
+          <span id="progress-modules-stat">0 of 6 lessons completed</span>
+          <span id="progress-status-stat">In Progress</span>
+        </div>
+        <button class="button button-accent" id="next-lesson-btn" style="margin-top:6px;width:100%;text-align:center;">
+          Continue Learning <span>→</span>
+        </button>
+        <button type="button" class="btn-reset-course-curriculum" id="reset-course-btn" title="Restart this track from Lesson 1">
+          ↺ Reset Track to Lesson 1
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Course Layout: Left Lessons List, Right Sidebar -->
+    <div class="course-main-layout">
+      <!-- Left: Lessons & Uploaded Materials -->
+      <section>
+        <div class="lessons-list-title">
+          <div>
+            <h2>Curriculum & Interactive Lesson Modules</h2>
+            <p style="font-size:13px;color:#6b7d72;margin:4px 0 0;">
+              Lesson context, lab walkthroughs, and configs are displayed directly in the lesson box. Completing the lesson and passing its mandatory quiz is required to unlock each subsequent lesson.
+            </p>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <button type="button" class="btn-tutor-action btn-accent-tutor" id="btn-course-add-module-header" style="display:none;font-weight:700;">
+              <span>➕ Add New Module</span>
+            </button>
+            <div class="curriculum-mode-pill" id="curriculum-mode-pill">
+              <span class="curriculum-mode-dot" id="curriculum-mode-dot">●</span>
+              <span id="curriculum-mode-text">Sequential Gating Active</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lessons-container" id="lessons-container">
+          <div style="padding:40px;text-align:center;color:#687b70;background:#fff;border:1px solid #e0e8dd;border-radius:12px;">
+            <em>Loading lesson modules and curriculum resources...</em>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Sidebar -->
+      <aside class="course-sidebar">
+        <div class="sidebar-panel">
+          <h3>🎯 Lab Scenario Access</h3>
+          <p>Each module features hands-on cloud tenant scenarios. Practice in sandbox environments mimicking live enterprise fleets.</p>
+          <ul class="sidebar-list">
+            <li><span>✓</span> Real-world EMM/UEM configurations</li>
+            <li><span>✓</span> Downloadable XML & JSON blueprints</li>
+            <li><span>✓</span> Instant verification & feedback</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-panel">
+          <h3>📁 Tutor Materials Synced</h3>
+          <p>Instructors upload customized walk-throughs, sample configuration payloads, and assessments for each module.</p>
+          <div style="font-size:12px;color:#1e3a24;background:#f0f8eb;border:1px solid #d0e8c5;border-radius:8px;padding:10px 12px;">
+            💡 <strong>Live Tutor Sync:</strong> Any documents uploaded by tutors in the tutor portal are automatically attached below the corresponding lesson.
+          </div>
+        </div>
+
+        <div class="sidebar-panel">
+          <h3>🏆 Certification Path</h3>
+          <p>Complete all modules in this track to earn your verified <strong>UEM Labs Specialist</strong> digital badge and certificate.</p>
+          <a href="dashboard.html" class="button button-outline" style="width:100%;text-align:center;text-decoration:none;display:block;">
+            Return to Dashboard
+          </a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Document Preview Modal -->
+  <div class="modal-backdrop" id="preview-modal" aria-hidden="true">
+    <div class="modal preview-modal-card">
+      <div class="preview-modal-header">
+        <div class="preview-modal-title-wrap">
+          <span class="preview-modal-icon">📖</span>
+          <div>
+            <h3 id="preview-modal-title">Document Preview</h3>
+            <span id="preview-modal-meta" class="preview-modal-meta"></span>
+          </div>
+        </div>
+        <div class="preview-modal-actions">
+          <a id="preview-modal-download" class="button button-outline preview-modal-open-link" target="_blank" rel="noopener">Open externally ↗</a>
+          <button class="modal-close" id="preview-modal-close" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="preview-modal-body" id="preview-modal-body">
+        <!-- Rendered preview content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Add Supplemental Lesson Module -->
+  <div class="tutor-modal-overlay" id="modal-add-lesson" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#244415;background:#e5f3d4;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Curriculum Expansion</span>
+          <h3 style="margin-top:4px;">➕ Add Supplemental Lesson Module</h3>
+          <p id="new-lesson-target-course" style="font-size:12px;color:#63776b;margin:2px 0 0;"></p>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-add-lesson-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-add-lesson" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="new-lesson-course-id" name="course_id">
+
+        <div class="tutor-form-grid">
+          <div class="tutor-form-group">
+            <label for="new-lesson-name">Module Name *</label>
+            <input type="text" id="new-lesson-name" class="tutor-form-input" placeholder="e.g. Advanced Network Segmentation & Zero Trust" required>
+          </div>
+          <div class="tutor-form-group">
+            <label for="new-lesson-duration">Estimated Duration *</label>
+            <input type="text" id="new-lesson-duration" class="tutor-form-input" placeholder="e.g. 50 mins" value="45 mins" required>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="new-lesson-summary">Module Summary *</label>
+          <input type="text" id="new-lesson-summary" class="tutor-form-input" placeholder="Core objectives of this supplemental lesson module" required>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="new-lesson-overview">Curriculum Overview *</label>
+          <textarea id="new-lesson-overview" class="tutor-form-textarea" rows="4" placeholder="Detailed architectural breakdown, operational procedures, and enterprise requirements..." required></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-add-lesson">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-add-lesson">
+            <span>Create & Append Module</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Add Question to Lesson Quiz -->
+  <div class="tutor-modal-overlay" id="modal-add-question" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#0369a1;background:#e0f2fe;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Quiz Builder</span>
+          <h3 id="question-modal-heading" style="margin-top:4px;">🎯 Add Quiz Question</h3>
+          <p id="question-modal-subheading" style="font-size:12px;color:#63776b;margin:2px 0 0;"></p>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-question-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-add-question" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="question-course-id" name="course_id">
+        <input type="hidden" id="question-lesson-id" name="lesson_id">
+
+        <div class="tutor-form-group">
+          <label for="question-text">Question Prompt *</label>
+          <textarea id="question-text" class="tutor-form-textarea" rows="2" placeholder="e.g. Which command dumps active Device Policy Controller restrictions on an Android Enterprise device?" required></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label>Multiple-Choice Options (Provide at least 2 options, up to 4) *</label>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 1:</span>
+              <input type="text" id="q-opt-0" class="tutor-form-input" style="flex:1;" placeholder="First option" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 2:</span>
+              <input type="text" id="q-opt-1" class="tutor-form-input" style="flex:1;" placeholder="Second option" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 3:</span>
+              <input type="text" id="q-opt-2" class="tutor-form-input" style="flex:1;" placeholder="Third option (optional)">
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 4:</span>
+              <input type="text" id="q-opt-3" class="tutor-form-input" style="flex:1;" placeholder="Fourth option (optional)">
+            </div>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="question-correct-answer">Correct Answer Key *</label>
+          <select id="question-correct-answer" class="form-select">
+            <option value="0">Option 1 is correct</option>
+            <option value="1">Option 2 is correct</option>
+            <option value="2">Option 3 is correct</option>
+            <option value="3">Option 4 is correct</option>
+          </select>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="question-explanation">Explanation / Enterprise Rationale *</label>
+          <textarea id="question-explanation" class="tutor-form-textarea" rows="2" placeholder="Explain why this option is correct and how it applies in live enterprise production environments." required></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-add-question">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-add-question">
+            <span>Add Question to Quiz</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Edit Existing Lesson Module -->
+  <div class="tutor-modal-overlay" id="modal-edit-lesson" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#244415;background:#e5f3d4;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Curriculum Studio</span>
+          <h3 id="edit-modal-heading" style="margin-top:4px;">✏️ Edit Lesson Curriculum</h3>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-edit-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-edit-lesson" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="edit-course-id" name="course_id">
+        <input type="hidden" id="edit-lesson-id" name="lesson_id">
+
+        <div class="tutor-form-grid">
+          <div class="tutor-form-group">
+            <label for="edit-lesson-name">Lesson Title *</label>
+            <input type="text" id="edit-lesson-name" class="tutor-form-input" required>
+          </div>
+          <div class="tutor-form-group">
+            <label for="edit-lesson-duration">Estimated Duration *</label>
+            <input type="text" id="edit-lesson-duration" class="tutor-form-input" placeholder="e.g. 45 mins" required>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-summary">Summary Overview *</label>
+          <input type="text" id="edit-lesson-summary" class="tutor-form-input" placeholder="Concise summary for module card" required>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-overview">In-Depth Architecture & Concept *</label>
+          <textarea id="edit-lesson-overview" class="tutor-form-textarea" rows="4" placeholder="Detailed architectural breakdown, protocol mechanics, enterprise policy details..." required></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-topics">Core Knowledge Topics (one per line)</label>
+          <textarea id="edit-lesson-topics" class="tutor-form-textarea" rows="3" placeholder="Topic 1&#10;Topic 2&#10;Topic 3"></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-lab-steps">Step-by-Step Production Lab Instructions (one step per line)</label>
+          <textarea id="edit-lesson-lab-steps" class="tutor-form-textarea" rows="4" placeholder="Step 1: In the EMM console...&#10;Step 2: Enroll endpoint...&#10;Step 3: Verify policies..."></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-configs">Production Configurations, ADB Commands, XML/JSON Schemas</label>
+          <textarea id="edit-lesson-configs" class="tutor-form-textarea" rows="4" style="font-family:monospace;font-size:12px;" placeholder="// Configuration payload, API request, or CLI commands"></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-takeaways">Enterprise Key Takeaways & Best Practices (one per line)</label>
+          <textarea id="edit-lesson-takeaways" class="tutor-form-textarea" rows="3" placeholder="Takeaway 1&#10;Takeaway 2&#10;Takeaway 3"></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-edit-lesson">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-edit-lesson">
+            <span>Save Lesson Changes</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Quick Upload Material to Lesson -->
+  <div class="tutor-modal-overlay" id="modal-upload-material" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#244415;background:#e5f3d4;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Curriculum Upload</span>
+          <h3 id="upload-modal-heading" style="margin-top:4px;">📁 Upload Lesson Resource</h3>
+          <p id="upload-modal-subheading" style="font-size:12px;color:#63776b;margin:2px 0 0;"></p>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-upload-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-upload-material" enctype="multipart/form-data" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="modal-upload-course-id" name="course_id">
+        <input type="hidden" id="modal-upload-course-name" name="course_name">
+        <input type="hidden" id="modal-upload-lesson-id" name="lesson_id">
+        <input type="hidden" id="modal-upload-lesson-name" name="lesson_name">
+
+        <div class="tutor-form-group">
+          <label for="modal-upload-file-input">Select Document or Blueprint (PDF, JSON, Image, Video)</label>
+          <input type="file" id="modal-upload-file-input" name="file" accept=".pdf,image/*,video/mp4,application/json" required class="tutor-form-input">
+        </div>
+
+        <div id="modal-upload-result" style="font-size:12px;"></div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-upload-material">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-submit-upload-material">
+            <span>Upload Resource</span> <span>↑</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="toast" id="toast"></div>
+
+  <script src="course.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "UEM Labs - Enterprise Academy",
+  "description": "Enterprise mobility and endpoint management training platform featuring role-based candidate learning dashboards, tutor portal, course modules, and lab management.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192e27" />
+      <stop offset="100%" stop-color="#0f1b17" />
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e4fa72" />
+      <stop offset="100%" stop-color="#c1ee20" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Mark Container -->
+  <g transform="translate(4, 4)">
+    <rect width="48" height="48" rx="13" fill="url(#markGrad)" stroke="#2b453d" stroke-width="1.2" />
+    <rect x="5" y="5" width="38" height="38" rx="9" fill="none" stroke="#223932" stroke-width="1" stroke-dasharray="3 2" />
+    <path d="M15 15 V25 C15 31.5 19 35.5 24 35.5 C29 35.5 33 31.5 33 25 V15" 
+          stroke="url(#limeGrad)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="15" cy="15" r="3.2" fill="#14231f" stroke="#e4fa72" stroke-width="2" />
+    <circle cx="33" cy="15" r="3.2" fill="#14231f" stroke="#e4fa72" stroke-width="2" />
+    <path d="M20 21 H28 M20 25.5 H26" stroke="url(#tealGrad)" stroke-width="2.2" stroke-linecap="round" />
+    <circle cx="24" cy="25.5" r="1.5" fill="#e4fa72" />
+  </g>
+
+  <!-- Typography -->
+  <text x="64" y="27" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.6" fill="#14231f">
+    UEM<tspan fill="#66776e" font-weight="600">labs</tspan>
+  </text>
+  <text x="64.5" y="41" font-family="'DM Sans', system-ui, sans-serif" font-weight="800" font-size="8.5" letter-spacing="1.8" fill="#718278">
+    ENTERPRISE MOBILITY
+  </text>
+</svg>

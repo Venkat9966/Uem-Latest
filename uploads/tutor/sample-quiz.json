@@ -1,0 +1,27 @@
+{
+  "title": "Android Enterprise Foundations - Module 1 Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary mechanism for distributing private in-house apps in Android Enterprise?",
+      "options": [
+        "Sideloading via APK files",
+        "Managed Google Play Store",
+        "Direct USB file transfer",
+        "Public Google Drive links"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 2,
+      "question": "Which deployment scenario isolates work data and personal data on an employee-owned device?",
+      "options": [
+        "Fully Managed Device (COBO)",
+        "Dedicated Device (COSU)",
+        "Work Profile (BYOD)",
+        "Company-Owned Personally Enabled (COPE)"
+      ],
+      "correct": 2
+    }
+  ]
+}

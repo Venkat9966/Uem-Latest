@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutor dashboard | UEM Labs Academy</title>
+  <link rel="icon" type="image/svg+xml" href="uem-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dash-header">
+    <a class="brand" href="index.html" aria-label="UEM Labs Academy Home"><img src="uem-logo.svg" alt="UEM Labs Logo" class="brand-logo-img" width="32" height="32"><span>UEM<span class="muted">LABS</span> <b>ACADEMY</b></span></a>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a class="active" href="tutor-dashboard.html">Tutor dashboard</a>
+      <button class="avatar" id="account-button">T</button>
+      <button class="button button-ghost logout-button" id="logout-button">Logout</button>
+    </nav>
+  </header>
+  <main class="dashboard-shell">
+    <section class="dash-welcome">
+      <div>
+        <div class="eyebrow">TUTOR OPERATIONS</div>
+        <h1>Welcome, <span data-role-name>Tutor</span> <span>✦</span></h1>
+        <p>Monitor course activity, learner progress, and upcoming sessions.</p>
+      </div>
+      <button class="button button-dark" id="session-button">New session <span>↗</span></button>
+    </section>
+    <section class="stats">
+      <div><small>ACTIVE LEARNERS</small><strong>142</strong><span>+16 this week</span></div>
+      <div><small>COURSES LIVE</small><strong>7</strong><span>2 pending review</span></div>
+      <div><small>COMPLETION RATE</small><strong>88%</strong><span>+4.2% this month</span></div>
+      <div><small>UPCOMING SESSIONS</small><strong>5</strong><span>3 labs scheduled</span></div>
+    </section>
+
+    <!-- Tutor Curriculum & Lesson Management Studio -->
+    <section class="tutor-curriculum-panel" id="tutor-curriculum-section">
+      <div class="tutor-curriculum-header">
+        <div>
+          <span style="font-size:11px;font-weight:800;color:#274d15;background:#e5f3d4;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.5px;">Curriculum & Quiz Studio</span>
+          <h2 style="font:700 22px 'Space Grotesk', sans-serif;color:#14231f;margin:6px 0 2px;">Course Lessons & Interactive Quizzes</h2>
+          <p style="font-size:13px;color:#607367;margin:0;">
+            Review lesson guides, edit detailed instructions, add extra quiz questions, or attach supplemental lab materials.
+          </p>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <div class="tutor-course-selector-wrap">
+            <label for="curriculum-course-select">Selected Track:</label>
+            <select id="curriculum-course-select" class="form-select" style="min-width:260px;">
+              <option value="all">All Tracks (Curriculum Overview)</option>
+              <option value="android-enterprise">Android Enterprise Foundations</option>
+              <option value="workspace-one">Workspace ONE Essentials</option>
+              <option value="soti-mobicontrol">SOTI MobiControl Mastery</option>
+              <option value="ivanti-neurons">Ivanti Neurons for UEM</option>
+              <option value="rugged-devices">Rugged & Frontline Devices</option>
+              <option value="intune-essentials">Intune & Endpoint Security</option>
+            </select>
+          </div>
+          <button type="button" class="btn-tutor-action btn-accent-tutor" id="btn-add-module-modal">
+            <span>➕ Add New Module</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Category-Specific Track Filter Bar with Icons and "+ Add" Symbol After Each One -->
+      <div class="tutor-track-filter-container">
+        <div class="tutor-track-filter-header">
+          <span class="tutor-track-filter-label">
+            <span>Enterprise Tracks</span> <span>• Click track to filter or click <b>+</b> after each one to add a module</span>
+          </span>
+          <span class="tutor-track-filter-hint">Tutor Course Control Bar</span>
+        </div>
+        <div class="course-filters tutor-filters" role="tablist" aria-label="Course Tracks with Add Buttons">
+          <!-- All Tracks -->
+          <button type="button" class="course-filter-btn" data-tutor-track="all" title="View all curriculum modules">
+            <span class="filter-btn-icon filter-icon-all" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+              </svg>
+            </span>
+            <span class="filter-btn-label">All Tracks</span>
+            <span class="filter-btn-add" data-add-track="all" title="Add module to curriculum" aria-label="Add module">+</span>
+          </button>
+
+          <!-- Android Enterprise -->
+          <button type="button" class="course-filter-btn active" data-tutor-track="android-enterprise" title="Filter to Android Enterprise Foundations">
+            <span class="filter-btn-icon filter-icon-android" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.52 15.34c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-11.04 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m11.4-6.02l2-3.46a.42.42 0 00-.15-.57.42.42 0 00-.57.15l-2.02 3.5a10.8 10.8 0 00-10.28 0L4.84 5.44a.42.42 0 00-.57-.15.42.42 0 00-.15.57l2 3.46C2.69 11.19.34 14.66 0 18.76h24c-.34-4.1-2.69-7.57-6.12-9.44z"></path>
+              </svg>
+            </span>
+            <span class="filter-btn-label">Android Enterprise</span>
+            <span class="filter-btn-add" data-add-track="android-enterprise" title="Add module to Android Enterprise" aria-label="Add module to Android Enterprise">+</span>
+          </button>
+
+          <!-- Workspace ONE -->
+          <button type="button" class="course-filter-btn" data-tutor-track="workspace-one" title="Filter to Workspace ONE Essentials">
+            <span class="filter-btn-icon filter-icon-workspaceone" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </span>
+            <span class="filter-btn-label">Workspace ONE</span>
+            <span class="filter-btn-add" data-add-track="workspace-one" title="Add module to Workspace ONE" aria-label="Add module to Workspace ONE">+</span>
+          </button>
+
+          <!-- SOTI MobiControl -->
+          <button type="button" class="course-filter-btn" data-tutor-track="soti-mobicontrol" title="Filter to SOTI MobiControl Mastery">
+            <span class="filter-btn-icon filter-icon-soti" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"></polygon>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="filter-btn-label">SOTI</span>
+            <span class="filter-btn-add" data-add-track="soti-mobicontrol" title="Add module to SOTI MobiControl" aria-label="Add module to SOTI MobiControl">+</span>
+          </button>
+
+          <!-- Ivanti Neurons -->
+          <button type="button" class="course-filter-btn" data-tutor-track="ivanti-neurons" title="Filter to Ivanti Neurons for UEM">
+            <span class="filter-btn-icon filter-icon-ivanti" aria-hidden="true">
+              <circle cx="12" cy="4" r="2.5" fill="currentColor"></circle>
+              <circle cx="5" cy="18" r="2.5" fill="currentColor"></circle>
+              <circle cx="19" cy="18" r="2.5" fill="currentColor"></circle>
+              <circle cx="12" cy="12.5" r="1.5"></circle>
+              <line x1="12" y1="6.5" x2="12" y2="11"></line>
+              <line x1="10.8" y1="13.7" x2="6.8" y2="16.5"></line>
+              <line x1="13.2" y1="13.7" x2="17.2" y2="16.5"></line>
+            </svg>
+            </span>
+            <span class="filter-btn-label">Ivanti</span>
+            <span class="filter-btn-add" data-add-track="ivanti-neurons" title="Add module to Ivanti Neurons" aria-label="Add module to Ivanti Neurons">+</span>
+          </button>
+
+          <!-- Rugged Devices -->
+          <button type="button" class="course-filter-btn" data-tutor-track="rugged-devices" title="Filter to Rugged & Frontline Devices">
+            <span class="filter-btn-icon filter-icon-rugged" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="2" width="12" height="20" rx="2.5"></rect>
+                <line x1="9" y1="6" x2="15" y2="6"></line>
+                <line x1="9" y1="10" x2="9" y2="14"></line>
+                <line x1="12" y1="10" x2="12" y2="14"></line>
+                <line x1="15" y1="10" x2="15" y2="14"></line>
+                <path d="M2 9h2M20 9h2"></path>
+                <circle cx="12" cy="18" r="1" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="filter-btn-label">Rugged Devices</span>
+            <span class="filter-btn-add" data-add-track="rugged-devices" title="Add module to Rugged Devices" aria-label="Add module to Rugged Devices">+</span>
+          </button>
+
+          <!-- Intune -->
+          <button type="button" class="course-filter-btn" data-tutor-track="intune-essentials" title="Filter to Intune & Endpoint Security">
+            <span class="filter-btn-icon filter-icon-intune" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11.5 14.5 15.5 9.5"></polyline>
+              </svg>
+            </span>
+            <span class="filter-btn-label">Intune</span>
+            <span class="filter-btn-add" data-add-track="intune-essentials" title="Add module to Intune" aria-label="Add module to Intune">+</span>
+          </button>
+
+          <!-- Dedicated Primary Add Track Button -->
+          <button type="button" class="btn-tutor-add-track-primary" id="btn-tutor-add-track-direct" title="Add Supplemental Module to Selected Track">
+            <span class="add-sym">+</span>
+            <span>Add Module</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-time Lessons Grid -->
+      <div class="tutor-lessons-grid" id="tutor-lessons-grid">
+        <div style="padding:30px;text-align:center;color:#6b7d72;">
+          <em>Loading course lesson modules and quiz data...</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="upload-panel">
+        <div class="section-title"><h2>Upload lesson resource</h2></div>
+        <p style="font-size:13px;color:#6b7d72;margin:0 0 16px;">Specify the target course and lesson module before uploading curriculum materials.</p>
+        <form id="tutor-upload-form" enctype="multipart/form-data">
+          <!-- Course and Lesson Destination Selectors -->
+          <div class="upload-destination-grid">
+            <div class="form-group">
+              <label for="upload-course">Target Course</label>
+              <select id="upload-course" name="course_id" class="form-select" required>
+                <option value="android-enterprise">Android Enterprise Foundations</option>
+                <option value="workspace-one">Workspace ONE Essentials</option>
+                <option value="soti-mobicontrol">SOTI MobiControl Mastery</option>
+                <option value="ivanti-neurons">Ivanti Neurons for UEM</option>
+                <option value="rugged-devices">Rugged & Frontline Devices</option>
+                <option value="intune-essentials">Intune & Endpoint Security</option>
+              </select>
+              <input type="hidden" id="upload-course-name" name="course_name" value="Android Enterprise Foundations">
+            </div>
+            <div class="form-group">
+              <label for="upload-lesson">Target Lesson / Module</label>
+              <select id="upload-lesson" name="lesson_id" class="form-select" required>
+                <!-- Populated dynamically via JS -->
+              </select>
+              <input type="hidden" id="upload-lesson-name" name="lesson_name" value="Module 1: Architecture & Device Enrollment">
+            </div>
+          </div>
+
+          <!-- Real-time Visual Destination Banner -->
+          <div class="upload-target-banner" id="upload-target-banner">
+            <div class="target-badge-icon" aria-hidden="true">📍</div>
+            <div class="target-badge-content">
+              <span class="target-badge-label">Destination Mapping</span>
+              <strong class="target-badge-path" id="target-badge-path">Android Enterprise Foundations → Module 1: Architecture & Device Enrollment</strong>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tutor-file-input">Choose Document (PDF, JSON, Image, Video)</label>
+            <input type="file" id="tutor-file-input" name="file" accept=".pdf,image/*,video/mp4,application/json" required>
+          </div>
+
+          <div id="file-pre-preview" class="file-pre-preview" style="display:none;"></div>
+          <div style="margin-top:14px;display:flex;align-items:center;gap:12px;">
+            <button class="button button-accent" id="upload-button" type="submit">
+              <span>Upload to Lesson</span> <span>↑</span>
+            </button>
+            <span id="upload-destination-tag" style="font-size:12px;color:#5a6861;font-weight:600;"></span>
+          </div>
+          <div id="upload-result" style="margin-top:10px"></div>
+        </form>
+      </div>
+      <div class="uploads-list-panel">
+        <div class="upload-list-header-bar">
+          <div class="section-title" style="margin-bottom:0"><h2>Your uploads</h2></div>
+          <div class="upload-filter-wrap">
+            <label for="filter-course-select">Filter by course:</label>
+            <select id="filter-course-select" class="upload-filter-select">
+              <option value="all">All courses (All uploads)</option>
+              <option value="android-enterprise">Android Enterprise Foundations</option>
+              <option value="workspace-one">Workspace ONE Essentials</option>
+              <option value="soti-mobicontrol">SOTI MobiControl Mastery</option>
+              <option value="ivanti-neurons">Ivanti Neurons for UEM</option>
+              <option value="rugged-devices">Rugged & Frontline Devices</option>
+              <option value="intune-essentials">Intune & Endpoint Security</option>
+            </select>
+          </div>
+        </div>
+        <div id="uploads-list">
+          <em>Loading…</em>
+        </div>
+      </div>
+      <div>
+        <div class="section-title"><h2>Current learners</h2><a href="#">View all →</a></div>
+        <div class="learning-card">
+          <div class="course-art orange"><span>ANDROID</span></div>
+          <div class="learning-info">
+            <div class="course-meta">MOBILITY TRACK · 12 ENROLLED</div>
+            <h3>Android Enterprise Foundations</h3>
+            <p>Top learner: <strong>Venkat</strong> is at 82% completion.</p>
+            <div class="progress-label"><span>Average score 81%</span><span>12/15 by cohort</span></div>
+            <div class="bar"><i style="width:81%"></i></div>
+            <div class="learning-actions">
+              <button class="button button-accent" data-action="lesson">Review progress <span>→</span></button>
+              <button type="button" class="button button-outline tutor-card-add-btn" data-action="add-module-track" data-track="android-enterprise" title="Add Module to Android Enterprise">
+                <span>+ Add</span>
+              </button>
+              <small>Next feedback due <strong>Tomorrow</strong></small>
+            </div>
+          </div>
+        </div>
+        <div class="learning-card second">
+          <div class="course-art blue"><span>WORKSPACE</span></div>
+          <div class="learning-info">
+            <div class="course-meta">ENDPOINT TRACK · 9 ENROLLED</div>
+            <h3>Workspace One Essentials</h3>
+            <p>Pending tasks: <strong>3 learner certifications</strong></p>
+            <div class="progress-label"><span>Avg. completion 74%</span><span>7/9 active</span></div>
+            <div class="bar"><i style="width:74%"></i></div>
+            <div class="learning-actions">
+              <button class="button button-outline" data-action="lesson">Open cohort <span>→</span></button>
+              <button type="button" class="button button-outline tutor-card-add-btn" data-action="add-module-track" data-track="workspace-one" title="Add Module to Workspace ONE">
+                <span>+ Add</span>
+              </button>
+              <small>Session starts <strong>Friday 10:30 AM</strong></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="section-title"><h2>Coach alerts</h2></div>
+        <div class="activity"><span class="activity-icon green">✓</span><div><strong>Assessment passed</strong><p>3 learners cleared endpoint security</p><small>Today · 8 min ago</small></div></div>
+        <div class="activity"><span class="activity-icon blue-icon">▶</span><div><strong>Live session</strong><p>Managed Google Play lab is live</p><small>Today · 11:00 AM</small></div></div>
+        <div class="activity"><span class="activity-icon lime-icon">!</span><div><strong>Follow-up needed</strong><p>2 learners need review on policy lab</p><small>Tomorrow · 9:15 AM</small></div></div>
+        <div class="streak-box"><span>✦</span><div><strong>Target hit</strong><p>This week’s tutoring goal is already above target.</p></div></div>
+      </aside>
+    </section>
+  </main>
+  <div class="toast" id="toast">Review queue updated.</div>
+
+  <!-- Document / PDF Preview Modal -->
+  <div class="modal-backdrop" id="preview-modal" aria-hidden="true">
+    <div class="modal preview-modal-card">
+      <div class="preview-modal-header">
+        <div class="preview-modal-title-wrap">
+          <span class="preview-modal-icon">📄</span>
+          <div>
+            <h3 id="preview-modal-title">Document Preview</h3>
+            <span id="preview-modal-meta" class="preview-modal-meta"></span>
+          </div>
+        </div>
+        <div class="preview-modal-actions">
+          <a id="preview-modal-download" class="button button-outline preview-modal-open-link" target="_blank" rel="noopener">Open externally ↗</a>
+          <button class="modal-close" id="preview-modal-close" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="preview-modal-body" id="preview-modal-body">
+        <!-- iframe / viewer will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Edit Existing Lesson Module -->
+  <div class="tutor-modal-overlay" id="modal-edit-lesson" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#244415;background:#e5f3d4;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Curriculum Studio</span>
+          <h3 id="edit-modal-heading" style="margin-top:4px;">✏️ Edit Lesson Curriculum</h3>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-edit-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-edit-lesson" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="edit-course-id" name="course_id">
+        <input type="hidden" id="edit-lesson-id" name="lesson_id">
+
+        <div class="tutor-form-grid">
+          <div class="tutor-form-group">
+            <label for="edit-lesson-name">Lesson Title *</label>
+            <input type="text" id="edit-lesson-name" class="tutor-form-input" required>
+          </div>
+          <div class="tutor-form-group">
+            <label for="edit-lesson-duration">Estimated Duration *</label>
+            <input type="text" id="edit-lesson-duration" class="tutor-form-input" placeholder="e.g. 45 mins" required>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-summary">Summary Overview *</label>
+          <input type="text" id="edit-lesson-summary" class="tutor-form-input" placeholder="Concise summary for module card" required>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-overview">In-Depth Architecture & Concept *</label>
+          <textarea id="edit-lesson-overview" class="tutor-form-textarea" rows="4" placeholder="Detailed architectural breakdown, protocol mechanics, enterprise policy details..." required></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-topics">Core Knowledge Topics (one per line)</label>
+          <textarea id="edit-lesson-topics" class="tutor-form-textarea" rows="3" placeholder="Topic 1&#10;Topic 2&#10;Topic 3"></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-lab-steps">Step-by-Step Production Lab Instructions (one step per line)</label>
+          <textarea id="edit-lesson-lab-steps" class="tutor-form-textarea" rows="4" placeholder="Step 1: In the EMM console...&#10;Step 2: Enroll endpoint...&#10;Step 3: Verify policies..."></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-configs">Production Configurations, ADB Commands, XML/JSON Schemas</label>
+          <textarea id="edit-lesson-configs" class="tutor-form-textarea" rows="4" style="font-family:monospace;font-size:12px;" placeholder="// Configuration payload, API request, or CLI commands"></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="edit-lesson-takeaways">Enterprise Key Takeaways & Best Practices (one per line)</label>
+          <textarea id="edit-lesson-takeaways" class="tutor-form-textarea" rows="3" placeholder="Takeaway 1&#10;Takeaway 2&#10;Takeaway 3"></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-edit-lesson">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-edit-lesson">
+            <span>Save Lesson Changes</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Add Question to Lesson Quiz -->
+  <div class="tutor-modal-overlay" id="modal-add-question" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#0369a1;background:#e0f2fe;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Quiz Builder</span>
+          <h3 id="question-modal-heading" style="margin-top:4px;">🎯 Add Quiz Question</h3>
+          <p id="question-modal-subheading" style="font-size:12px;color:#63776b;margin:2px 0 0;"></p>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-question-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-add-question" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="question-course-id" name="course_id">
+        <input type="hidden" id="question-lesson-id" name="lesson_id">
+
+        <div class="tutor-form-group">
+          <label for="question-text">Question Prompt *</label>
+          <textarea id="question-text" class="tutor-form-textarea" rows="2" placeholder="e.g. Which command dumps active Device Policy Controller restrictions on an Android Enterprise device?" required></textarea>
+        </div>
+
+        <div class="tutor-form-group">
+          <label>Multiple-Choice Options (Provide at least 2 options, up to 4) *</label>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 1:</span>
+              <input type="text" id="q-opt-0" class="tutor-form-input" style="flex:1;" placeholder="First option" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 2:</span>
+              <input type="text" id="q-opt-1" class="tutor-form-input" style="flex:1;" placeholder="Second option" required>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 3:</span>
+              <input type="text" id="q-opt-2" class="tutor-form-input" style="flex:1;" placeholder="Third option (optional)">
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="font-weight:700;font-size:12px;width:60px;">Option 4:</span>
+              <input type="text" id="q-opt-3" class="tutor-form-input" style="flex:1;" placeholder="Fourth option (optional)">
+            </div>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="question-correct-answer">Correct Answer Key *</label>
+          <select id="question-correct-answer" class="form-select">
+            <option value="0">Option 1 is correct</option>
+            <option value="1">Option 2 is correct</option>
+            <option value="2">Option 3 is correct</option>
+            <option value="3">Option 4 is correct</option>
+          </select>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="question-explanation">Explanation / Enterprise Rationale *</label>
+          <textarea id="question-explanation" class="tutor-form-textarea" rows="2" placeholder="Explain why this option is correct and how it applies in live enterprise production environments." required></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-add-question">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-add-question">
+            <span>Add Question to Quiz</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Add Supplemental Lesson Module -->
+  <div class="tutor-modal-overlay" id="modal-add-lesson" style="display:none;" aria-hidden="true">
+    <div class="tutor-modal-card">
+      <div class="tutor-modal-header">
+        <div>
+          <span style="font-size:11px;font-weight:700;color:#244415;background:#e5f3d4;padding:2px 8px;border-radius:4px;text-transform:uppercase;">Curriculum Expansion</span>
+          <h3 style="margin-top:4px;">➕ Add Supplemental Lesson Module</h3>
+          <p id="new-lesson-target-course" style="font-size:12px;color:#63776b;margin:2px 0 0;"></p>
+        </div>
+        <button type="button" class="modal-close" id="btn-close-add-lesson-modal" aria-label="Close">×</button>
+      </div>
+      <form id="form-add-lesson" style="display:flex;flex-direction:column;gap:14px;">
+        <input type="hidden" id="new-lesson-course-id" name="course_id">
+
+        <div class="tutor-form-grid">
+          <div class="tutor-form-group">
+            <label for="new-lesson-name">Module Name *</label>
+            <input type="text" id="new-lesson-name" class="tutor-form-input" placeholder="e.g. Advanced Network Segmentation & Zero Trust" required>
+          </div>
+          <div class="tutor-form-group">
+            <label for="new-lesson-duration">Estimated Duration *</label>
+            <input type="text" id="new-lesson-duration" class="tutor-form-input" placeholder="e.g. 50 mins" value="45 mins" required>
+          </div>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="new-lesson-summary">Module Summary *</label>
+          <input type="text" id="new-lesson-summary" class="tutor-form-input" placeholder="Core objectives of this supplemental lesson module" required>
+        </div>
+
+        <div class="tutor-form-group">
+          <label for="new-lesson-overview">Curriculum Overview *</label>
+          <textarea id="new-lesson-overview" class="tutor-form-textarea" rows="4" placeholder="Detailed architectural breakdown, operational procedures, and enterprise requirements..." required></textarea>
+        </div>
+
+        <div class="tutor-modal-footer">
+          <button type="button" class="button button-outline" id="btn-cancel-add-lesson">Cancel</button>
+          <button type="submit" class="button button-accent" id="btn-save-add-lesson">
+            <span>Create & Append Module</span> <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="tutor-dashboard.js"></script>
+  <script src="security.js"></script>
+</body>
+</html>
